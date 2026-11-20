@@ -1,0 +1,26 @@
+{
+  "name": "hyperframes-videos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "render": "cd meu-primeiro-video && hyperframes render -o ../exportados/meu-primeiro-video.mp4",
+    "check": "cd meu-primeiro-video && hyperframes check",
+    "doctor": "hyperframes doctor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larissafon/Claude.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larissafon/Claude/issues"
+  },
+  "homepage": "https://github.com/larissafon/Claude#readme",
+  "devDependencies": {
+    "hyperframes": "^0.9.71"
+  }
+}

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #0f1222;
+        --ground-2: #24204a;
+        --ink: #ffffff;
+        --accent: #ffb547;
+        --font-display: "DejaVu Sans", "Helvetica Neue", Arial, sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: var(--ground);
+      }
+      #root {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 36px;
+        font-family: var(--font-display);
+        background: radial-gradient(circle at 50% 45%, var(--ground-2) 0%, var(--ground) 70%);
+      }
+      #title {
+        position: absolute;
+        left: 0;
+        top: 440px;
+        width: 1920px;
+        text-align: center;
+        line-height: 1;
+        color: var(--ink);
+        font-size: 140px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+      }
+      #bar {
+        position: absolute;
+        left: 700px;
+        top: 640px;
+        width: 520px;
+        height: 10px;
+        border-radius: 5px;
+        background: var(--accent);
+        transform-origin: left center;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="5"
+      data-width="1920"
+      data-height="1080"
+    >
+      <h1 id="title" class="clip" data-start="0" data-duration="5" data-track-index="0">
+        Meu primeiro vídeo
+      </h1>
+      <div id="bar" class="clip" data-start="0" data-duration="5" data-track-index="1"></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      // 0.0–1.0s: o título (já visível no quadro 0) sobe e ganha foco
+      tl.fromTo(
+        "#title",
+        { opacity: 0.45, y: 50, filter: "blur(6px)" },
+        { opacity: 1, y: 0, filter: "blur(0px)", duration: 1, ease: "power3.out" },
+        0
+      );
+      // 0.8–1.6s: a barra de destaque cresce
+      tl.fromTo("#bar", { scaleX: 0 }, { scaleX: 1, duration: 0.8, ease: "power2.inOut" }, 0.8);
+      // 1.6–4.2s: leve zoom enquanto o título fica na tela
+      tl.to("#title", { scale: 1.04, duration: 2.6, ease: "sine.inOut" }, 1.6);
+      // 4.2–5.0s: tudo some
+      tl.to(["#title", "#bar"], { opacity: 0, y: -30, duration: 0.6, ease: "power2.in" }, 4.2);
+      tl.set({}, {}, 5);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>
