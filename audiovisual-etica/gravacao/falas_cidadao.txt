@@ -1,0 +1,50 @@
+FALAS DE: CIDADÃO
+Total: 13 falas
+
+Como gravar:
+- Grave cada fala em um arquivo separado, com o nome indicado entre colchetes.
+- Pode ser no celular (gravador de voz). Formatos aceitos: m4a, mp3, wav, ogg ou opus (áudio de WhatsApp).
+- Lugar silencioso, celular a um palmo da boca, sem fone com microfone.
+- Deixe 1 segundo de silêncio antes e depois de falar; eu corto as sobras.
+- Errou? Repita a frase inteira no mesmo arquivo; eu uso a última versão.
+- Fale com calma, como se estivesse explicando para um colega.
+
+[cena02_fala02_cidadao]   (cena 02: A pergunta)
+E quem fica com essa riqueza?
+
+[cena02_fala04_cidadao]   (cena 02: A pergunta)
+Poderiam. Mas vão estar? Você diz que é eficiente. Eficiente para quem?
+
+[cena03_fala05_cidadao]   (cena 03: Fato e valor)
+Será? Vamos ver se é tão simples assim.
+
+[cena05_fala01_cidadao]   (cena 05: O que é uma necessidade?)
+Me responde uma coisa. A economia diz que estuda como satisfazer as necessidades das pessoas. Mas o que é uma necessidade?
+
+[cena05_fala03_cidadao]   (cena 05: O que é uma necessidade?)
+E um celular? Hoje, sem celular, eu não consigo procurar emprego, falar com a escola do meu filho, acessar o banco.
+
+[cena05_fala05_cidadao]   (cena 05: O que é uma necessidade?)
+E uma viagem de férias?
+
+[cena05_fala07_cidadao]   (cena 05: O que é uma necessidade?)
+Para quem? Quem decide onde termina a necessidade e começa o desejo?
+
+[cena07_fala03_cidadao]   (cena 07: A economia começa a escolher)
+Então escolher o indicador já é escolher o que conta.
+
+[cena09_fala03_cidadao]   (cena 09: A crítica marxiana)
+Então quando o modelo diz todos poderiam estar melhor, ele está apagando quem ganha e quem perde.
+
+[cena10_fala03_cidadao]   (cena 10: Caso hipotético: R$ 1 bilhão)
+E qual é a melhor?
+
+[cena11_fala01_cidadao]   (cena 11: Quem escolhe os pesos?)
+Se eu priorizo crescimento, escolho infraestrutura. Se priorizo quem está passando fome hoje, escolho transferência. Se penso nos meus netos, educação.
+
+[cena11_fala03_cidadao]   (cena 11: Quem escolhe os pesos?)
+Quem escolhe os pesos?
+
+[cena12_fala04_cidadao]   (cena 12: Fechamento)
+E abrir espaço para que as pessoas afetadas participem dessa escolha.
+

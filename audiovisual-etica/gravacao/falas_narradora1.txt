@@ -1,0 +1,50 @@
+FALAS DE: NARRADORA 1
+Total: 13 falas
+
+Como gravar:
+- Grave cada fala em um arquivo separado, com o nome indicado entre colchetes.
+- Pode ser no celular (gravador de voz). Formatos aceitos: m4a, mp3, wav, ogg ou opus (áudio de WhatsApp).
+- Lugar silencioso, celular a um palmo da boca, sem fone com microfone.
+- Deixe 1 segundo de silêncio antes e depois de falar; eu corto as sobras.
+- Errou? Repita a frase inteira no mesmo arquivo; eu uso a última versão.
+- Fale com calma, como se estivesse explicando para um colega.
+
+[cena01_fala01_narradora1]   (cena 01: Abertura)
+Toda semana, alguma decisão pública chega até nós embalada em números: crescimento, custo, eficiência. E quase sempre vem acompanhada de uma frase: essa é a escolha economicamente correta. Mas o que exatamente essa frase está dizendo? Ela descreve o mundo, ou já está decidindo por nós como ele deve ser?
+
+[cena02_fala05_narradora1]   (cena 02: A pergunta)
+Riqueza maior, desigualdade maior. É uma boa política? Repare que os números não respondem a isso sozinhos. Para responder, precisamos dizer o que consideramos bom.
+
+[cena03_fala02_narradora1]   (cena 03: Fato e valor)
+A segunda: devemos escolher essa política. Nenhum dado, sozinho, confirma essa frase. Ela depende do que valorizamos: crescimento, igualdade, liberdade, segurança. É uma afirmação sobre o que deve ser.
+
+[cena04_fala01_narradora1]   (cena 04: Moral e ética)
+Para avançar, vale distinguir duas palavras que costumamos usar como sinônimos. Moral são os valores vividos: os costumes, as regras e as convicções que orientam o que uma sociedade considera certo ou errado no dia a dia.
+
+[cena06_fala02_narradora1]   (cena 06: Necessidade, desejo e demanda)
+E demanda é outra coisa: é o desejo sustentado por poder de compra. Adam Smith já distinguia a simples vontade de ter algo da demanda efetiva, aquela de quem pode pagar.
+
+[cena07_fala01_narradora1]   (cena 07: A economia começa a escolher)
+Voltemos ao economista que dizia apenas descrever. Antes de qualquer cálculo, ele precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?
+
+[cena07_fala05_narradora1]   (cena 07: A economia começa a escolher)
+Escolher o que medir, o que priorizar e para quem: essas são decisões de valor, tomadas antes mesmo de o modelo começar a rodar.
+
+[cena08_fala02_narradora1]   (cena 08: Reducionismo mainstream)
+Esse é o individualismo metodológico: explicar os fenômenos sociais a partir das escolhas de indivíduos. Simplificações são úteis; todo modelo simplifica. O problema começa quando a simplificação passa a ser tratada como a própria realidade, e perguntas sobre justiça, poder e finalidade são deixadas de fora como não econômicas. É isso que chamamos de reducionismo.
+
+[cena09_fala02_narradora1]   (cena 09: A crítica marxiana)
+As pessoas produzem e consomem dentro de relações sociais: entre trabalhadores e proprietários, entre classes, com conflitos de interesse. Ao tratar preços e mercados como fenômenos naturais, a teoria esconde que por trás das mercadorias há relações entre pessoas. Marx chamou isso de fetichismo da mercadoria.
+
+[cena10_fala01_narradora1]   (cena 10: Caso hipotético: R$ 1 bilhão)
+Vamos testar tudo isso em um caso hipotético. O governo tem um bilhão de reais para investir, e quatro opções: infraestrutura, saúde, educação ou transferência de renda.
+
+[cena11_fala05_narradora1]   (cena 11: Quem escolhe os pesos?)
+A pergunta qual é a escolha economicamente correta já contém uma escolha ética: correta segundo qual objetivo, e para quem?
+
+[cena12_fala02_narradora1]   (cena 12: Fechamento)
+O problema não é usar a economia para decidir. É esquecer que as decisões afetam pessoas, e tratá-las como se fossem resultados técnicos, neutros, sem autor.
+
+[cena13_fala02_narradora1]   (cena 13: Pergunta final e créditos)
+Então fica a pergunta: a economia pode, sozinha, dizer o que devemos fazer?
+

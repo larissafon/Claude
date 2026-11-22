@@ -212,3 +212,27 @@ h3{{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute
 </main></body></html>'''
 open(os.path.join(OUT, "storyboard.html"), "w").write(doc)
 print(json.dumps({"total": fmt(TOTAL), "palavras": total_palavras, "cenas": [(c["t"], fmt(c["ini"]), c["dur"]) for c in CENAS]}, ensure_ascii=False, indent=1))
+
+# ---------- falas por voz (para gravação separada) ----------
+import unicodedata
+def slug(s):
+    s = unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower()
+    return s.replace(" ", "")
+os.makedirs(os.path.join(OUT, "gravacao"), exist_ok=True)
+for voz in (N1, N2, EC, CI):
+    L = [f"FALAS DE: {voz}", "",
+         "Como gravar:",
+         "- Grave cada fala em um arquivo separado, com o nome indicado entre colchetes.",
+         "- Pode ser no celular (gravador de voz). Formatos aceitos: m4a, mp3, wav, ogg ou opus (áudio de WhatsApp).",
+         "- Lugar silencioso, celular a um palmo da boca, sem fone com microfone.",
+         "- Deixe 1 segundo de silêncio antes e depois de falar; eu corto as sobras.",
+         "- Errou? Repita a frase inteira no mesmo arquivo; eu uso a última versão.",
+         "- Fale com calma, como se estivesse explicando para um colega.", ""]
+    n = 0
+    for i, c in enumerate(CENAS, 1):
+        for j, (quem, fala) in enumerate(c["falas"], 1):
+            if quem != voz: continue
+            n += 1
+            L += [f"[cena{i:02d}_fala{j:02d}_{slug(voz)}]   (cena {i:02d}: {c['t']})", fala, ""]
+    L.insert(1, f"Total: {n} falas")
+    open(os.path.join(OUT, "gravacao", f"falas_{slug(voz)}.txt"), "w").write("\n".join(L) + "\n")
