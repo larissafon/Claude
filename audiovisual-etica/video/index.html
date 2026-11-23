@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <title>Quando a economia diz o que devemos fazer?</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+
+@font-face { font-family: "Fraunces"; src: url("assets/fonts/fraunces.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+@font-face { font-family: "Inter"; src: url("assets/fonts/inter.woff2") format("woff2"); font-weight: 100 900; font-display: block; }
+@font-face { font-family: "Caveat"; src: url("assets/fonts/caveat.woff2") format("woff2"); font-weight: 400 700; font-display: block; }
+:root {
+  --papel: #f4eee2; --linha: #e4d9c3; --margem: #e7a495; --tinta: #1d2433; --suave: #5f6675;
+  --fato: #1f6fb2; --valor: #d66b29; --verde: #2f8a74; --roxo: #6b4fa3; --mostarda: #b8892a;
+  --cartao: #fffdf8; --borda: #d9cfbb;
+  --infra: #5b6b82; --saude: #2f8a74; --educ: #6b4fa3; --renda: #b8892a;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--papel); }
+#root { position: relative; width: 1920px; height: 1080px; font-family: "Inter", sans-serif; color: var(--tinta); }
+#papel { position: absolute; inset: 0;
+  background:
+    linear-gradient(90deg, transparent 99px, var(--margem) 99px, var(--margem) 101px, transparent 101px),
+    repeating-linear-gradient(180deg, transparent 0 53px, var(--linha) 53px 54px),
+    var(--papel); }
+.cena-host { position: absolute; inset: 0; }
+.cena { position: absolute; inset: 0; }
+.abs { position: absolute; }
+.h { opacity: 0; }
+.titulo { font-family: "Fraunces", serif; font-weight: 800; letter-spacing: -0.02em; line-height: 1.08; }
+.mao { font-family: "Caveat", cursive; font-weight: 600; line-height: 1; }
+.centro { left: 0; right: 0; text-align: center; }
+.cartao { background: var(--cartao); border: 2px solid var(--borda); border-radius: 22px; box-shadow: 0 8px 0 rgba(29,36,51,.08); }
+.fato { color: var(--fato); } .valor { color: var(--valor); } .suave { color: var(--suave); }
+.selo { display: inline-block; padding: 8px 22px; border-radius: 99px; font-weight: 800; font-size: 28px; letter-spacing: .06em; color: #fff; background: var(--tinta); }
+.selo.fato { background: var(--fato); color: #fff; } .selo.valor { background: var(--valor); color: #fff; }
+.balao { position: absolute; background: #fff; border: 3px solid var(--tinta); border-radius: 28px; padding: 18px 26px;
+  font-size: 34px; font-weight: 600; line-height: 1.25; box-shadow: 0 6px 0 rgba(29,36,51,.12); }
+.balao::after { content: ""; position: absolute; bottom: -18px; width: 30px; height: 30px; background: #fff;
+  border-right: 3px solid var(--tinta); border-bottom: 3px solid var(--tinta); transform: rotate(45deg); }
+.balao.esq::after { left: 70px; } .balao.dir::after { right: 70px; }
+.balao .quem { display: block; font-size: 28px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 4px; }
+.pessoa { position: absolute; }
+.pessoa svg { display: block; width: 100%; height: auto; }
+.pessoa .nome { margin-top: 6px; text-align: center; font-size: 28px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.ficticio { position: absolute; right: 70px; top: 36px; background: var(--tinta); color: #fff; font-weight: 800; font-size: 28px;
+  letter-spacing: .1em; padding: 8px 16px; border-radius: 8px; }
+.opcao { position: absolute; border-radius: 18px; background: var(--cartao); border: 2px solid var(--borda); display: flex; align-items: center;
+  gap: 18px; padding: 0 24px; font-weight: 800; font-size: 28px; letter-spacing: .04em; box-shadow: 0 6px 0 rgba(29,36,51,.08); }
+.opcao i { display: block; width: 18px; align-self: stretch; margin: 18px 0; border-radius: 9px; }
+/* legendas */
+.lg-area { position: absolute; left: 0; right: 0; bottom: 30px; height: 160px; }
+.lg { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: max-content; max-width: 1560px;
+  background: rgba(255,253,248,.97); border: 2px solid var(--borda); border-radius: 18px; padding: 10px 30px 14px; text-align: center;
+  opacity: 0; box-shadow: 0 6px 0 rgba(29,36,51,.08); }
+.lg-quem { display: block; font-size: 28px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+.lg-txt { display: block; font-size: 36px; font-weight: 600; line-height: 1.25; }
+
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="572.81" data-width="1920" data-height="1080">
+      <div id="papel" class="clip" data-start="0" data-duration="572.81" data-track-index="0"></div>
+      <div id="cena01-host" class="clip cena-host" data-composition-id="cena01" data-composition-src="compositions/cena01.html"
+        data-start="0.0" data-duration="33.96" data-track-index="1"></div>
+      <div id="cena02-host" class="clip cena-host" data-composition-id="cena02" data-composition-src="compositions/cena02.html"
+        data-start="33.96" data-duration="45.47" data-track-index="1"></div>
+      <div id="cena03-host" class="clip cena-host" data-composition-id="cena03" data-composition-src="compositions/cena03.html"
+        data-start="79.43" data-duration="60.52" data-track-index="1"></div>
+      <div id="cena04-host" class="clip cena-host" data-composition-id="cena04" data-composition-src="compositions/cena04.html"
+        data-start="139.95" data-duration="38.42" data-track-index="1"></div>
+      <div id="cena05-host" class="clip cena-host" data-composition-id="cena05" data-composition-src="compositions/cena05.html"
+        data-start="178.37" data-duration="39.74" data-track-index="1"></div>
+      <div id="cena06-host" class="clip cena-host" data-composition-id="cena06" data-composition-src="compositions/cena06.html"
+        data-start="218.11" data-duration="49.99" data-track-index="1"></div>
+      <div id="cena07-host" class="clip cena-host" data-composition-id="cena07" data-composition-src="compositions/cena07.html"
+        data-start="268.1" data-duration="46.59" data-track-index="1"></div>
+      <div id="cena08-host" class="clip cena-host" data-composition-id="cena08" data-composition-src="compositions/cena08.html"
+        data-start="314.69" data-duration="39.72" data-track-index="1"></div>
+      <div id="cena09-host" class="clip cena-host" data-composition-id="cena09" data-composition-src="compositions/cena09.html"
+        data-start="354.41" data-duration="50.86" data-track-index="1"></div>
+      <div id="cena10-host" class="clip cena-host" data-composition-id="cena10" data-composition-src="compositions/cena10.html"
+        data-start="405.27" data-duration="50.91" data-track-index="1"></div>
+      <div id="cena11-host" class="clip cena-host" data-composition-id="cena11" data-composition-src="compositions/cena11.html"
+        data-start="456.18" data-duration="35.3" data-track-index="1"></div>
+      <div id="cena12-host" class="clip cena-host" data-composition-id="cena12" data-composition-src="compositions/cena12.html"
+        data-start="491.48" data-duration="40.68" data-track-index="1"></div>
+      <div id="cena13-host" class="clip cena-host" data-composition-id="cena13" data-composition-src="compositions/cena13.html"
+        data-start="532.16" data-duration="40.65" data-track-index="1"></div>
+      <div id="legendas-host" class="clip cena-host" data-track-kind="captions" data-composition-id="legendas" data-composition-src="compositions/legendas.html"
+        data-start="0" data-duration="572.81" data-track-index="2"></div>
+
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      tl.set({}, {}, 572.81);
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

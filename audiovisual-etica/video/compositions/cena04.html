@@ -1,0 +1,84 @@
+<template id="cena04-template">
+  <div data-composition-id="cena04" data-width="1920" data-height="1080" data-duration="38.42">
+    <div class="cena">
+
+<div id="s4-moral" class="abs h" style="left:170px;top:110px">
+  <div class="titulo" style="font-size:130px">Moral</div>
+  <div class="mao suave" style="font-size:52px;margin-top:6px">valores vividos no dia a dia</div>
+</div>
+<div class="abs cartao s4-c h" style="left:170px;top:360px;width:250px;height:220px;padding:26px 22px">
+  <div style="font-size:28px;font-weight:800;letter-spacing:.08em;text-transform:uppercase" class="suave">costumes</div>
+  <div class="mao" style="font-size:50px;margin-top:22px">fazer fila</div></div><div class="abs cartao s4-c h" style="left:450px;top:360px;width:250px;height:220px;padding:26px 22px">
+  <div style="font-size:28px;font-weight:800;letter-spacing:.08em;text-transform:uppercase" class="suave">regras</div>
+  <div class="mao" style="font-size:50px;margin-top:22px">respeitar o sinal</div></div><div class="abs cartao s4-c h" style="left:730px;top:360px;width:250px;height:220px;padding:26px 22px">
+  <div style="font-size:28px;font-weight:800;letter-spacing:.08em;text-transform:uppercase" class="suave">convicções</div>
+  <div class="mao" style="font-size:50px;margin-top:22px">cuidar da família</div></div>
+<div id="s4-div" class="abs h" style="left:1040px;top:110px;width:4px;height:640px;background:var(--borda)"></div>
+<div id="s4-etica" class="abs h" style="left:1120px;top:110px">
+  <div class="titulo valor" style="font-size:130px">Ética</div>
+  <div class="mao suave" style="font-size:52px;margin-top:6px">reflexão sobre esses valores</div>
+</div>
+<div class="abs titulo s4-q h" style="left:1130px;top:360px;font-size:52px">por que seguimos?</div><div class="abs titulo s4-q h" style="left:1130px;top:446px;font-size:52px">faz sentido?</div><div class="abs titulo s4-q h" style="left:1130px;top:532px;font-size:52px">a quem serve?</div>
+<svg id="s4-lupa" class="abs h" style="left:1500px;top:330px" width="220" height="240" viewBox="0 0 220 240">
+  <circle cx="90" cy="90" r="72" fill="#fff" fill-opacity=".35" stroke="#d66b29" stroke-width="14"/><line x1="142" y1="142" x2="205" y2="225" stroke="#d66b29" stroke-width="22" stroke-linecap="round"/></svg>
+<div id="s4-ef" class="abs h" style="left:1120px;top:650px;display:flex;align-items:center;gap:22px">
+  <div class="balao" style="position:relative;font-size:40px"><span class="titulo valor">Eficiente para quem?</span></div>
+  <span class="selo valor" style="font-size:30px">É ÉTICA</span></div>
+
+    </div>
+    <style>
+
+    </style>
+    <script>
+      (function () {
+        const root = document.querySelector('[data-composition-id="cena04"]');
+        const F = [[1.0, 17.09], [17.79, 36.92]];
+        const D = 38.42;
+
+        const q = (s) => root.querySelector(s);
+        const qa = (s) => Array.from(root.querySelectorAll(s));
+        const el = (t) => (typeof t === "string" ? qa(t) : Array.isArray(t) ? t : [t]);
+        const T = (i, f = 0) => F[i][0] + f * (F[i][1] - F[i][0]);
+        const tl = gsap.timeline({ paused: true });
+        function entra(t, at, de = { y: 30 }, dur = 0.6) {
+          tl.fromTo(el(t), { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: dur, ease: "power3.out" }, at);
+        }
+        function serie(t, at, gap = 0.18, de = { y: 30 }) { el(t).forEach((x, k) => entra(x, at + k * gap, de)); }
+        function pop(t, at, dur = 0.5) {
+          tl.fromTo(el(t), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: dur, ease: "back.out(1.7)" }, at);
+        }
+        function sai(t, at, dur = 0.4) { tl.to(el(t), { opacity: 0, duration: dur, ease: "power2.in" }, at); }
+        function escurece(t, at, o = 0.25, dur = 0.5) { tl.to(el(t), { opacity: o, duration: dur, ease: "power1.inOut" }, at); }
+        function fala(t, i) {
+          const n = Math.max(1, Math.floor((F[i][1] - F[i][0]) / 0.5));
+          tl.to(el(t), { y: -7, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: n * 2 - 1 }, F[i][0]);
+        }
+        function balao(t, i, ate) { pop(t, T(i)); sai(t, ate === undefined ? F[i][1] + 0.3 : ate); }
+        function moldura(entrada = true) {
+          const c = q(".cena");
+          if (entrada) tl.fromTo(c, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0);
+          tl.to(c, { opacity: 0, duration: 0.5, ease: "power1.in" }, D - 0.5);
+          tl.fromTo(c, { scale: 1 }, { scale: 1.035, duration: D, ease: "none", transformOrigin: "50% 45%" }, 0);
+          tl.set({}, {}, D);
+        }
+
+
+        moldura();
+        entra("#s4-moral", 0.3);
+        serie(".s4-c", T(0, 0.3), 0.45);
+        entra("#s4-div", F[1][0] - 0.3, { y: 0 });
+        entra("#s4-etica", T(1, 0), { x: 40 });
+        entra("#s4-lupa", T(1, 0.08), { x: 60 });
+        tl.to(el("#s4-lupa"), { x: -1270, y: 20, duration: 1.2, ease: "power2.inOut" }, T(1, 0.14));
+        tl.to(el("#s4-lupa"), { x: -990, duration: 0.8, ease: "power2.inOut" }, T(1, 0.28));
+        tl.to(el("#s4-lupa"), { x: -710, duration: 0.8, ease: "power2.inOut" }, T(1, 0.40));
+        tl.to(el("#s4-lupa"), { x: 0, y: 0, opacity: 0, duration: 0.8, ease: "power2.in" }, T(1, 0.52));
+        serie(".s4-q", T(1, 0.16), (F[1][1] - F[1][0]) * 0.12);
+        pop("#s4-ef", T(1, 0.6));
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["cena04"] = tl;
+      })();
+    </script>
+  </div>
+</template>

@@ -1,0 +1,72 @@
+<template id="cena13-template">
+  <div data-composition-id="cena13" data-width="1920" data-height="1080" data-duration="40.65">
+    <div class="cena">
+
+<div id="s13-a" class="abs titulo centro h" style="top:120px;font-size:56px">A economia é indispensável para compreender o mundo.</div>
+<div id="s13-fins" class="abs titulo valor h" style="left:360px;top:330px;font-size:190px">FINS</div>
+<div id="s13-meios" class="abs h" style="left:1000px;top:380px">
+  <div class="mao suave" style="font-size:56px">e não apenas os</div>
+  <div class="titulo fato" style="font-size:130px">MEIOS</div></div>
+<div id="s13-q" class="abs titulo centro h" style="left:180px;right:180px;top:290px;font-size:104px">A economia pode, <span class="valor">sozinha</span>, dizer o que devemos fazer?</div>
+<div id="s13-cred" class="abs h" style="left:140px;right:140px;top:70px;text-align:center">
+  <div class="titulo" style="font-size:60px">Quando a economia diz o que <span class="valor">devemos</span> fazer?</div>
+  <div style="font-size:32px;font-weight:700;margin-top:40px;line-height:1.5">Ana Luísa Mathias Costa · Fernada Cruz de Souza<br>Isis Mirelle de Santana Silva · Larissa Carneiro Fonseca</div>
+  <div class="suave" style="font-size:30px;font-weight:600;margin-top:30px;line-height:1.5">Ética e Ciência Econômica · Prof. Múcio Tosta Gonçalves<br>Ciências Econômicas (COECO) · 2º semestre de 2026</div>
+  <div class="suave" style="font-size:28px;font-weight:600;margin-top:34px;line-height:1.5">Referências: Hume, <i>Tratado da Natureza Humana</i> (1739–40) · Smith, <i>A Riqueza das Nações</i> (1776) ·
+  Marx, <i>Grundrisse</i> (1857–58) e <i>O Capital</i>, Livro I (1867) · ONU, <i>Sistema de Contas Nacionais</i> (2008)<br>
+  Os valores do caso de R$ 1 bilhão são fictícios, para ilustração. · Trilha sonora: a definir · Feito com HyperFrames</div></div>
+
+    </div>
+    <style>
+
+    </style>
+    <script>
+      (function () {
+        const root = document.querySelector('[data-composition-id="cena13"]');
+        const F = [[1.0, 12.3], [13.0, 18.65]];
+        const D = 40.65;
+
+        const q = (s) => root.querySelector(s);
+        const qa = (s) => Array.from(root.querySelectorAll(s));
+        const el = (t) => (typeof t === "string" ? qa(t) : Array.isArray(t) ? t : [t]);
+        const T = (i, f = 0) => F[i][0] + f * (F[i][1] - F[i][0]);
+        const tl = gsap.timeline({ paused: true });
+        function entra(t, at, de = { y: 30 }, dur = 0.6) {
+          tl.fromTo(el(t), { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: dur, ease: "power3.out" }, at);
+        }
+        function serie(t, at, gap = 0.18, de = { y: 30 }) { el(t).forEach((x, k) => entra(x, at + k * gap, de)); }
+        function pop(t, at, dur = 0.5) {
+          tl.fromTo(el(t), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: dur, ease: "back.out(1.7)" }, at);
+        }
+        function sai(t, at, dur = 0.4) { tl.to(el(t), { opacity: 0, duration: dur, ease: "power2.in" }, at); }
+        function escurece(t, at, o = 0.25, dur = 0.5) { tl.to(el(t), { opacity: o, duration: dur, ease: "power1.inOut" }, at); }
+        function fala(t, i) {
+          const n = Math.max(1, Math.floor((F[i][1] - F[i][0]) / 0.5));
+          tl.to(el(t), { y: -7, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: n * 2 - 1 }, F[i][0]);
+        }
+        function balao(t, i, ate) { pop(t, T(i)); sai(t, ate === undefined ? F[i][1] + 0.3 : ate); }
+        function moldura(entrada = true) {
+          const c = q(".cena");
+          if (entrada) tl.fromTo(c, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0);
+          tl.to(c, { opacity: 0, duration: 0.5, ease: "power1.in" }, D - 0.5);
+          tl.fromTo(c, { scale: 1 }, { scale: 1.035, duration: D, ease: "none", transformOrigin: "50% 45%" }, 0);
+          tl.set({}, {}, D);
+        }
+
+
+        moldura();
+        entra("#s13-a", T(0, 0.02));
+        pop("#s13-fins", T(0, 0.62));
+        entra("#s13-meios", T(0, 0.8), { x: 40 });
+        sai(["#s13-a", "#s13-fins", "#s13-meios"], F[1][0] - 0.1);
+        entra("#s13-q", T(1, 0.15), { y: 30 }, 1.0);
+        const fimQ = F[1][1] + 5;
+        sai("#s13-q", fimQ, 0.8);
+        entra("#s13-cred", fimQ + 1.0, { y: 20 }, 1.0);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["cena13"] = tl;
+      })();
+    </script>
+  </div>
+</template>

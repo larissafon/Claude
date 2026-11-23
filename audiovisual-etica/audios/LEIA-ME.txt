@@ -1,0 +1,9 @@
+Coloque aqui as gravações das falas.
+
+Nome do arquivo = id da fala (veja gravacao/falas_*.txt), com qualquer extensão:
+  cena02_fala04_cidadao.m4a   cena01_fala01_narradora1.ogg   ...
+
+Depois rode:  python3 montar_video.py
+O montador corta silêncios, nivela o volume, encaixa cada fala no tempo certo
+e ajusta a duração das cenas à duração real das vozes.
+Falas sem gravação continuam com o tempo estimado (só legenda).

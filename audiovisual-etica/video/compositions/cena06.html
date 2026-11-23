@@ -1,0 +1,85 @@
+<template id="cena06-template">
+  <div data-composition-id="cena06" data-width="1920" data-height="1080" data-duration="49.99">
+    <div class="cena">
+
+<div id="s6-k0" class="abs cartao h" style="left:150px;top:90px;width:500px;height:330px;padding:34px;border-top:16px solid var(--verde)">
+  <div class="titulo" style="font-size:50px;color:var(--verde)">Necessidades</div>
+  <div style="font-size:31px;margin-top:20px;font-weight:600;line-height:1.35">condições para viver com <b>dignidade</b> numa sociedade e numa época</div></div>
+<div id="s6-k1" class="abs cartao h" style="left:710px;top:90px;width:500px;height:330px;padding:34px;border-top:16px solid var(--roxo)">
+  <div class="titulo" style="font-size:50px;color:var(--roxo)">Desejos</div>
+  <div style="font-size:31px;margin-top:20px;font-weight:600;line-height:1.35">moldados pela <b>cultura</b>, pela <b>publicidade</b>, pelo que parece normal</div></div>
+<div id="s6-k2" class="abs cartao h" style="left:1270px;top:90px;width:500px;height:330px;padding:34px;border-top:16px solid var(--fato)">
+  <div class="titulo fato" style="font-size:50px">Demanda</div>
+  <div style="font-size:31px;margin-top:20px;font-weight:600;line-height:1.35">desejo <b>+ poder de compra</b></div>
+  <svg class="abs" style="right:34px;bottom:30px" width="120" height="90" viewBox="0 0 120 90"><rect x="4" y="14" width="112" height="72" rx="12" fill="#1f6fb2"/><rect x="70" y="36" width="46" height="28" rx="8" fill="#a7bfdc"/><circle cx="86" cy="50" r="6" fill="#1f6fb2"/></svg></div>
+<div id="s6-smith" class="abs cartao h" style="left:330px;right:330px;top:480px;padding:30px 40px;text-align:center">
+  <div class="titulo" style="font-size:48px">Adam Smith: <span class="fato">“demanda efetiva”</span></div>
+  <div style="font-size:30px;margin-top:12px;font-weight:600" class="suave">a demanda de quem pode pagar · <i>A Riqueza das Nações</i> (1776), Livro I, cap. 7</div></div>
+<svg id="s6-graf" class="abs h" style="left:220px;top:90px" width="820" height="620" viewBox="0 0 820 620">
+  <line x1="80" y1="20" x2="80" y2="560" stroke="#1d2433" stroke-width="6"/><line x1="80" y1="560" x2="800" y2="560" stroke="#1d2433" stroke-width="6"/>
+  <text x="30" y="50" font-family="Inter" font-weight="800" font-size="34" fill="#1d2433">P</text>
+  <text x="770" y="605" font-family="Inter" font-weight="800" font-size="34" fill="#1d2433">Q</text>
+  <path id="s6-curva" d="M120 70 C 260 330, 420 450, 760 520" pathLength="1" fill="none" stroke="#1f6fb2" stroke-width="10" stroke-linecap="butt" style="stroke-dasharray:1;stroke-dashoffset:1"/>
+  <text x="470" y="400" font-family="Caveat" font-weight="600" font-size="48" fill="#1f6fb2">curva de demanda</text></svg>
+<div id="s6-pess" class="abs h" style="left:1260px;top:170px;width:300px;text-align:center">
+  <svg width="170" viewBox="0 0 100 130"><circle cx="50" cy="32" r="24" fill="#5f6675"/><path d="M8 130 C8 84 26 64 50 64 C74 64 92 84 92 130Z" fill="#5f6675"/></svg>
+  <div class="mao" style="font-size:46px;margin-top:10px">com fome,<br>sem dinheiro</div></div>
+<div id="s6-fora" class="abs selo valor h" style="left:1210px;top:560px;font-size:32px">não aparece na curva</div>
+<div id="s6-frase" class="abs titulo centro h" style="top:760px;font-size:50px">O mercado responde à <span class="fato">demanda</span>, não à <span style="color:var(--verde)">necessidade</span>.</div>
+
+    </div>
+    <style>
+
+    </style>
+    <script>
+      (function () {
+        const root = document.querySelector('[data-composition-id="cena06"]');
+        const F = [[1.0, 14.91], [15.61, 29.09], [29.79, 48.49]];
+        const D = 49.99;
+
+        const q = (s) => root.querySelector(s);
+        const qa = (s) => Array.from(root.querySelectorAll(s));
+        const el = (t) => (typeof t === "string" ? qa(t) : Array.isArray(t) ? t : [t]);
+        const T = (i, f = 0) => F[i][0] + f * (F[i][1] - F[i][0]);
+        const tl = gsap.timeline({ paused: true });
+        function entra(t, at, de = { y: 30 }, dur = 0.6) {
+          tl.fromTo(el(t), { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: dur, ease: "power3.out" }, at);
+        }
+        function serie(t, at, gap = 0.18, de = { y: 30 }) { el(t).forEach((x, k) => entra(x, at + k * gap, de)); }
+        function pop(t, at, dur = 0.5) {
+          tl.fromTo(el(t), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: dur, ease: "back.out(1.7)" }, at);
+        }
+        function sai(t, at, dur = 0.4) { tl.to(el(t), { opacity: 0, duration: dur, ease: "power2.in" }, at); }
+        function escurece(t, at, o = 0.25, dur = 0.5) { tl.to(el(t), { opacity: o, duration: dur, ease: "power1.inOut" }, at); }
+        function fala(t, i) {
+          const n = Math.max(1, Math.floor((F[i][1] - F[i][0]) / 0.5));
+          tl.to(el(t), { y: -7, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: n * 2 - 1 }, F[i][0]);
+        }
+        function balao(t, i, ate) { pop(t, T(i)); sai(t, ate === undefined ? F[i][1] + 0.3 : ate); }
+        function moldura(entrada = true) {
+          const c = q(".cena");
+          if (entrada) tl.fromTo(c, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0);
+          tl.to(c, { opacity: 0, duration: 0.5, ease: "power1.in" }, D - 0.5);
+          tl.fromTo(c, { scale: 1 }, { scale: 1.035, duration: D, ease: "none", transformOrigin: "50% 45%" }, 0);
+          tl.set({}, {}, D);
+        }
+
+
+        moldura();
+        entra("#s6-k0", T(0, 0.05)); entra("#s6-k1", T(0, 0.5));
+        entra("#s6-k2", T(1, 0.0));
+        entra("#s6-smith", T(1, 0.45));
+        sai(["#s6-k0", "#s6-k1", "#s6-k2", "#s6-smith"], F[2][0] - 0.1);
+        entra("#s6-graf", T(2, 0.0));
+        tl.to(el("#s6-curva"), { strokeDashoffset: 0, duration: 1.4, ease: "power2.inOut" }, T(2, 0.03));
+        entra("#s6-frase", T(2, 0.12));
+        entra("#s6-pess", T(2, 0.32), { x: 40 });
+        pop("#s6-fora", T(2, 0.52));
+        escurece("#s6-pess", T(2, 0.78), 0.12, 1.2);
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["cena06"] = tl;
+      })();
+    </script>
+  </div>
+</template>

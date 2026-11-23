@@ -1,0 +1,72 @@
+<template id="cena01-template">
+  <div data-composition-id="cena01" data-width="1920" data-height="1080" data-duration="33.96">
+    <div class="cena">
+<div class="abs titulo s1-chip" style="left:210px;top:120px;font-size:46px;color:var(--fato)">crescimento</div><div class="abs titulo s1-chip" style="left:820px;top:90px;font-size:64px;color:var(--tinta)">PIB</div><div class="abs titulo s1-chip" style="left:1500px;top:140px;font-size:52px;color:var(--tinta)">custo</div><div class="abs titulo s1-chip h" style="left:300px;top:560px;font-size:58px;color:var(--fato)">eficiência</div><div class="abs titulo s1-chip h" style="left:1640px;top:470px;font-size:70px;color:var(--tinta)">R$</div><div class="abs titulo s1-chip h" style="left:1180px;top:650px;font-size:44px;color:var(--tinta)">meta fiscal</div><div class="abs titulo s1-chip h" style="left:1560px;top:690px;font-size:80px;color:var(--fato)">%</div><div class="abs titulo s1-chip h" style="left:1150px;top:220px;font-size:46px;color:var(--tinta)">produtividade</div><div class="abs titulo s1-chip h" style="left:820px;top:720px;font-size:50px;color:var(--tinta)">juros</div><div class="abs titulo s1-chip h" style="left:170px;top:760px;font-size:42px;color:var(--fato)">orçamento</div>
+<div id="s1-quote" class="abs titulo centro h" style="top:330px;font-size:88px"><span class="valor">“</span>a escolha economicamente correta<span class="valor">”</span></div>
+<div id="s1-q2" class="abs centro h" style="top:500px;font-size:40px;font-weight:700"><span class="selo fato" style="font-size:36px">DESCREVE O MUNDO?</span>
+  <span style="margin:0 24px" class="suave">ou</span><span class="selo valor" style="font-size:36px">DECIDE POR NÓS?</span></div>
+<div id="s1-int" class="abs titulo centro valor h" style="top:-60px;font-size:900px;line-height:1">?</div>
+<div id="s1-tit" class="abs titulo centro h" style="left:200px;right:200px;top:300px;font-size:116px">Quando a economia diz o que <span class="valor">devemos</span> fazer?</div>
+<div id="s1-sub" class="abs centro h" style="top:640px;font-size:30px;letter-spacing:.24em;font-weight:800;color:var(--suave)">ÉTICA E CIÊNCIA ECONÔMICA</div>
+
+    </div>
+    <style>
+
+    </style>
+    <script>
+      (function () {
+        const root = document.querySelector('[data-composition-id="cena01"]');
+        const F = [[1.5, 23.24], [23.94, 30.46]];
+        const D = 33.96;
+
+        const q = (s) => root.querySelector(s);
+        const qa = (s) => Array.from(root.querySelectorAll(s));
+        const el = (t) => (typeof t === "string" ? qa(t) : Array.isArray(t) ? t : [t]);
+        const T = (i, f = 0) => F[i][0] + f * (F[i][1] - F[i][0]);
+        const tl = gsap.timeline({ paused: true });
+        function entra(t, at, de = { y: 30 }, dur = 0.6) {
+          tl.fromTo(el(t), { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: dur, ease: "power3.out" }, at);
+        }
+        function serie(t, at, gap = 0.18, de = { y: 30 }) { el(t).forEach((x, k) => entra(x, at + k * gap, de)); }
+        function pop(t, at, dur = 0.5) {
+          tl.fromTo(el(t), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: dur, ease: "back.out(1.7)" }, at);
+        }
+        function sai(t, at, dur = 0.4) { tl.to(el(t), { opacity: 0, duration: dur, ease: "power2.in" }, at); }
+        function escurece(t, at, o = 0.25, dur = 0.5) { tl.to(el(t), { opacity: o, duration: dur, ease: "power1.inOut" }, at); }
+        function fala(t, i) {
+          const n = Math.max(1, Math.floor((F[i][1] - F[i][0]) / 0.5));
+          tl.to(el(t), { y: -7, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: n * 2 - 1 }, F[i][0]);
+        }
+        function balao(t, i, ate) { pop(t, T(i)); sai(t, ate === undefined ? F[i][1] + 0.3 : ate); }
+        function moldura(entrada = true) {
+          const c = q(".cena");
+          if (entrada) tl.fromTo(c, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0);
+          tl.to(c, { opacity: 0, duration: 0.5, ease: "power1.in" }, D - 0.5);
+          tl.fromTo(c, { scale: 1 }, { scale: 1.035, duration: D, ease: "none", transformOrigin: "50% 45%" }, 0);
+          tl.set({}, {}, D);
+        }
+
+
+        moldura(false);
+        const chips = qa(".s1-chip");
+        const rot = [-6, 4, -3, 7, -5, 3, -8, 5, -2, 6];
+        chips.forEach((c, k) => {
+          tl.set(c, { rotation: rot[k] }, 0);
+          if (k < 3) tl.set(c, { opacity: 1 }, 0);
+          else entra(c, 0.3 + (k - 3) * 0.55, { y: -50 });
+        });
+        tl.to(chips, { opacity: 0.16, duration: 0.8 }, T(0, 0.4));
+        pop("#s1-quote", T(0, 0.42));
+        entra("#s1-q2", T(0, 0.74));
+        sai(["#s1-quote", "#s1-q2"], F[1][0] - 0.2);
+        sai(chips, F[1][0]);
+        tl.fromTo(q("#s1-int"), { opacity: 0, scale: 0.4 }, { opacity: 0.1, scale: 1, duration: 0.9, ease: "power3.out" }, T(1, 0.05));
+        entra("#s1-tit", T(1, 0.2), { y: 40 }, 0.9);
+        entra("#s1-sub", T(1, 0.6));
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["cena01"] = tl;
+      })();
+    </script>
+  </div>
+</template>

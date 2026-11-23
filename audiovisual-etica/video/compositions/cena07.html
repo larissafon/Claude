@@ -1,0 +1,83 @@
+<template id="cena07-template">
+  <div data-composition-id="cena07" data-width="1920" data-height="1080" data-duration="46.59">
+    <div class="cena">
+<div class="abs cartao s7-t h" id="s7-t0" style="left:200px;top:130px;width:340px;height:190px;display:flex;align-items:center;justify-content:center;font-family:Fraunces;font-weight:800;font-size:56px;border-width:4px">PIB</div><div class="abs cartao s7-t h" id="s7-t1" style="left:590px;top:130px;width:340px;height:190px;display:flex;align-items:center;justify-content:center;font-family:Fraunces;font-weight:800;font-size:56px;border-width:4px">EMPREGO</div><div class="abs cartao s7-t h" id="s7-t2" style="left:980px;top:130px;width:340px;height:190px;display:flex;align-items:center;justify-content:center;font-family:Fraunces;font-weight:800;font-size:56px;border-width:4px">INFLAÇÃO</div><div class="abs cartao s7-t h" id="s7-t3" style="left:1370px;top:130px;width:340px;height:190px;display:flex;align-items:center;justify-content:center;font-family:Fraunces;font-weight:800;font-size:46px;border-width:4px">BEM-ESTAR?</div>
+<div id="s7-perg" class="abs mao centro h" style="top:390px;font-size:64px">o que vou medir? qual indicador representa “estar melhor”?</div>
+<div id="s7-pib" class="abs h" style="left:360px;top:90px;width:1200px;height:560px">
+  <div class="abs titulo" style="left:0;top:0;font-size:60px">PIB</div>
+  <div class="abs s7-p h" style="left:0px;top:90px;width:580px;height:180px;background:#a7bfdc;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:38px;color:#173c62">indústria</div><div class="abs s7-p h" style="left:600px;top:90px;width:580px;height:180px;background:#a7bfdc;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:38px;color:#173c62">serviços</div><div class="abs s7-p h" style="left:0px;top:290px;width:580px;height:180px;background:#a7bfdc;border-radius:18px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:38px;color:#173c62">agropecuária</div>
+  <div id="s7-falta" class="abs h" style="left:600px;top:290px;width:580px;height:180px;border:6px dashed var(--valor);border-radius:18px;display:flex;align-items:center;justify-content:center;text-align:center;padding:0 30px;font-weight:800;font-size:32px;color:var(--valor)">trabalho doméstico e de cuidado não remunerado</div>
+  <div id="s7-nao" class="abs selo valor h" style="left:740px;top:486px;font-size:30px">não entra no PIB</div>
+</div>
+<div id="s7-mulher" class="abs mao h" style="left:420px;top:680px;font-size:50px;color:var(--valor)">feito majoritariamente por mulheres</div>
+<div id="s7-neutro" class="abs mao h" style="left:1080px;top:680px;font-size:50px">→ nos números, parece neutro</div>
+<div class="balao esq h" id="s7-b2" style="left:200px;top:660px;width:640px"><span class="quem" style="color:#c2541c">Cidadão</span>Escolher o indicador já é escolher o que conta.</div>
+<div class="balao dir h" id="s7-b3" style="left:1300px;top:670px;width:380px"><span class="quem" style="color:var(--fato)">Economista</span>…e quem conta.</div>
+<div id="s7-tres" class="abs titulo centro h" style="top:290px;font-size:76px"><span class="s7-w">o que medir</span> · <span class="s7-w">o que priorizar</span> · <span class="s7-w">para quem</span></div>
+<div id="s7-dv" class="abs centro h" style="top:470px"><span class="selo valor" style="font-size:40px">DECISÕES DE VALOR</span></div>
+<div id="s7-antes" class="abs mao centro h" style="top:590px;font-size:56px">tomadas antes mesmo de o modelo rodar</div>
+
+    </div>
+    <style>
+
+    </style>
+    <script>
+      (function () {
+        const root = document.querySelector('[data-composition-id="cena07"]');
+        const F = [[1.0, 11.43], [12.13, 26.91], [27.61, 31.96], [32.66, 33.96], [34.66, 45.09]];
+        const D = 46.59;
+
+        const q = (s) => root.querySelector(s);
+        const qa = (s) => Array.from(root.querySelectorAll(s));
+        const el = (t) => (typeof t === "string" ? qa(t) : Array.isArray(t) ? t : [t]);
+        const T = (i, f = 0) => F[i][0] + f * (F[i][1] - F[i][0]);
+        const tl = gsap.timeline({ paused: true });
+        function entra(t, at, de = { y: 30 }, dur = 0.6) {
+          tl.fromTo(el(t), { opacity: 0, ...de }, { opacity: 1, x: 0, y: 0, duration: dur, ease: "power3.out" }, at);
+        }
+        function serie(t, at, gap = 0.18, de = { y: 30 }) { el(t).forEach((x, k) => entra(x, at + k * gap, de)); }
+        function pop(t, at, dur = 0.5) {
+          tl.fromTo(el(t), { opacity: 0, scale: 0.7 }, { opacity: 1, scale: 1, duration: dur, ease: "back.out(1.7)" }, at);
+        }
+        function sai(t, at, dur = 0.4) { tl.to(el(t), { opacity: 0, duration: dur, ease: "power2.in" }, at); }
+        function escurece(t, at, o = 0.25, dur = 0.5) { tl.to(el(t), { opacity: o, duration: dur, ease: "power1.inOut" }, at); }
+        function fala(t, i) {
+          const n = Math.max(1, Math.floor((F[i][1] - F[i][0]) / 0.5));
+          tl.to(el(t), { y: -7, duration: 0.25, ease: "sine.inOut", yoyo: true, repeat: n * 2 - 1 }, F[i][0]);
+        }
+        function balao(t, i, ate) { pop(t, T(i)); sai(t, ate === undefined ? F[i][1] + 0.3 : ate); }
+        function moldura(entrada = true) {
+          const c = q(".cena");
+          if (entrada) tl.fromTo(c, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, 0);
+          tl.to(c, { opacity: 0, duration: 0.5, ease: "power1.in" }, D - 0.5);
+          tl.fromTo(c, { scale: 1 }, { scale: 1.035, duration: D, ease: "none", transformOrigin: "50% 45%" }, 0);
+          tl.set({}, {}, D);
+        }
+
+
+        moldura();
+        serie(".s7-t", T(0, 0.0), 0.2);
+        entra("#s7-perg", T(0, 0.3));
+        [3, 2, 1].forEach((k, n) => {
+          tl.to(el("#s7-t" + k), { borderColor: "#1f6fb2", duration: 0.2 }, T(0, 0.45) + n * 0.6);
+          tl.to(el("#s7-t" + k), { borderColor: "#d9cfbb", duration: 0.2 }, T(0, 0.45) + n * 0.6 + 0.45);
+        });
+        tl.to(el("#s7-t0"), { borderColor: "#1f6fb2", color: "#1f6fb2", scale: 1.08, duration: 0.3 }, T(0, 0.85));
+        escurece(["#s7-t1", "#s7-t2", "#s7-t3"], T(0, 0.85), 0.3);
+        sai([".s7-t", "#s7-perg"], F[1][0] - 0.2);
+        entra("#s7-pib", T(1, 0)); serie(".s7-p", T(1, 0.02), 0.25, { y: -40 });
+        pop("#s7-falta", T(1, 0.12)); pop("#s7-nao", T(1, 0.3));
+        entra("#s7-mulher", T(1, 0.45)); entra("#s7-neutro", T(1, 0.75));
+        sai(["#s7-mulher", "#s7-neutro"], F[2][0] - 0.1);
+        balao("#s7-b2", 2, F[4][0]); balao("#s7-b3", 3, F[4][0]);
+        sai("#s7-pib", F[4][0] - 0.1);
+        entra("#s7-tres", T(4, 0.05));
+        tl.fromTo(el(".s7-w"), { color: "#1f6fb2" }, { color: "#d66b29", duration: 0.5, stagger: 0.3 }, T(4, 0.45));
+        pop("#s7-dv", T(4, 0.55)); entra("#s7-antes", T(4, 0.75));
+
+        window.__timelines = window.__timelines || {};
+        window.__timelines["cena07"] = tl;
+      })();
+    </script>
+  </div>
+</template>
