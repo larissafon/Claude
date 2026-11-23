@@ -1,3 +1,5 @@
 node_modules/
 .hyperframes/
 __pycache__/
+exportados/work-*/
+exportados/.*.hf-transaction-*/
