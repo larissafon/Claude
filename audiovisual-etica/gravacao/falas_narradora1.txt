@@ -25,7 +25,7 @@ Para avançar, vale distinguir duas palavras que costumamos usar como sinônimos
 E demanda é outra coisa: é o desejo sustentado por poder de compra. Adam Smith já distinguia a simples vontade de ter algo da demanda efetiva, aquela de quem pode pagar.
 
 [cena07_fala01_narradora1]   (cena 07: A economia começa a escolher)
-Voltemos ao economista que dizia apenas descrever. Antes de qualquer cálculo, ele precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?
+Voltemos à economista que dizia apenas descrever. Antes de qualquer cálculo, ela precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?
 
 [cena07_fala05_narradora1]   (cena 07: A economia começa a escolher)
 Escolher o que medir, o que priorizar e para quem: essas são decisões de valor, tomadas antes mesmo de o modelo começar a rodar.

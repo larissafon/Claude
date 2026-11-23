@@ -1,6 +1,8 @@
 """Fonte única das cenas e falas do audiovisual (usada pelo roteiro, storyboard e vídeo)."""
 
-N1, N2, EC, CI = "NARRADORA 1", "NARRADORA 2", "ECONOMISTA", "CIDADÃO"
+N1, N2, EC, CI = "NARRADORA 1", "NARRADORA 2", "ECONOMISTA", "CIDADÃ"
+# nome usado nos arquivos de gravação (mantido estável)
+ARQ = {N1: "narradora1", N2: "narradora2", EC: "economista", CI: "cidadao"}
 
 CENAS = [
  dict(t="Abertura", bloco="—", tag="pergunta",
@@ -9,7 +11,7 @@ CENAS = [
          (N2,"Este audiovisual parte de uma pergunta simples: quando a economia diz o que devemos fazer?")],
   extra=3),
  dict(t="A pergunta", bloco="1", tag="encenação",
-  visual="Apresentação dos dois personagens (ilustração plana): ECONOMISTA ao lado de um quadro com gráfico; CIDADÃO de frente. Gráfico 1: barra “Renda total” sobe. Gráfico 2: a mesma renda dividida em fatias por grupo (mais pobres → mais ricos); a fatia de cima cresce muito mais. Balão do cidadão: “Eficiente para quem?” fica marcado em laranja.",
+  visual="Apresentação dos dois personagens (ilustração plana): ECONOMISTA ao lado de um quadro com gráfico; CIDADÃ de frente. Gráfico 1: barra “Renda total” sobe. Gráfico 2: a mesma renda dividida em fatias por grupo (mais pobres → mais ricos); a fatia de cima cresce muito mais. Balão da cidadã: “Eficiente para quem?” fica marcado em laranja.",
   falas=[(EC,"Tenho aqui uma proposta. Segundo o nosso modelo, esta política aumenta a renda total do país. A economia cresce, a riqueza aumenta."),
          (CI,"E quem fica com essa riqueza?"),
          (EC,"Bom... o modelo também indica que a desigualdade aumenta. Os mais ricos ganham bem mais que os mais pobres. Mas, no agregado, todos poderiam estar melhor."),
@@ -25,9 +27,9 @@ CENAS = [
  dict(t="Moral e ética", bloco="2", tag="conceito",
   visual="Duas palavras grandes lado a lado. MORAL: ícones de costumes, regras e convicções do dia a dia (fila, aperto de mão, placa). ÉTICA: uma lupa passa por cima desses ícones com a pergunta “por quê? a quem serve?”. Retorno rápido ao balão “Eficiente para quem?”, agora com a etiqueta ÉTICA.",
   falas=[(N1,"Para avançar, vale distinguir duas palavras que costumamos usar como sinônimos. Moral são os valores vividos: os costumes, as regras e as convicções que orientam o que uma sociedade considera certo ou errado no dia a dia."),
-         (N2,"Ética é a reflexão sobre esses valores: perguntar por que os seguimos, se fazem sentido e a quem servem. Quando o cidadão pergunta eficiente para quem, ele está fazendo exatamente isso: trazendo a reflexão ética para dentro de uma conversa que parecia apenas técnica.")]),
+         (N2,"Ética é a reflexão sobre esses valores: perguntar por que os seguimos, se fazem sentido e a quem servem. Quando a cidadã pergunta eficiente para quem, ela está fazendo exatamente isso: trazendo a reflexão ética para dentro de uma conversa que parecia apenas técnica.")]),
  dict(t="O que é uma necessidade?", bloco="3", tag="encenação",
-  visual="Cinco cartas entram uma a uma: ALIMENTAÇÃO, MORADIA, SAÚDE, CELULAR, VIAGEM. O economista arrasta as cartas para duas colunas, “necessidade” e “desejo”; o CELULAR oscila entre as duas e VIAGEM vai para “desejo”. A linha que separa as colunas fica tracejada com a pergunta “quem decide?”.",
+  visual="Cinco cartas entram uma a uma: ALIMENTAÇÃO, MORADIA, SAÚDE, CELULAR, VIAGEM. A economista arrasta as cartas para duas colunas, “necessidade” e “desejo”; o CELULAR oscila entre as duas e VIAGEM vai para “desejo”. A linha que separa as colunas fica tracejada com a pergunta “quem decide?”.",
   falas=[(CI,"Me responde uma coisa. A economia diz que estuda como satisfazer as necessidades das pessoas. Mas o que é uma necessidade?"),
          (EC,"Alimentação, moradia, saúde. Isso é básico."),
          (CI,"E um celular? Hoje, sem celular, eu não consigo procurar emprego, falar com a escola do meu filho, acessar o banco."),
@@ -42,7 +44,7 @@ CENAS = [
          (N2,"Aqui está o ponto: o mercado responde à demanda, não à necessidade. Uma pessoa com fome e sem dinheiro não aparece na curva de demanda. Se a economia olha apenas para o que é demandado, quem não pode pagar simplesmente some da análise.")]),
  dict(t="A economia começa a escolher", bloco="4", tag="conceito",
   visual="Painel de indicadores (PIB, emprego, inflação) com uma mão escolhendo qual acender. Exemplo: um “PIB” montado como quebra-cabeça em que falta a peça TRABALHO DOMÉSTICO E DE CUIDADO NÃO REMUNERADO (peça em tracejado). As palavras O QUE MEDIR · O QUE PRIORIZAR · PARA QUEM mudam de azul (fato) para laranja (valor).",
-  falas=[(N1,"Voltemos ao economista que dizia apenas descrever. Antes de qualquer cálculo, ele precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?"),
+  falas=[(N1,"Voltemos à economista que dizia apenas descrever. Antes de qualquer cálculo, ela precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?"),
          (N2,"Um exemplo: o PIB não contabiliza o trabalho doméstico e de cuidado não remunerado, realizado majoritariamente por mulheres. Uma política que aumente esse trabalho invisível pode aparecer, nos números, como neutra ou até positiva."),
          (CI,"Então escolher o indicador já é escolher o que conta."),
          (EC,"E quem conta."),
@@ -65,14 +67,14 @@ CENAS = [
          (N2,"Os números são fictícios, mas o dilema é real. Cada gráfico mostra um resultado dentro do modelo, e nenhum deles diz, sozinho, qual escolher.")],
   extra=4),
  dict(t="Quem escolhe os pesos?", bloco="5", tag="encenação",
-  visual="O cidadão gira um seletor de prioridades (crescimento / fome hoje / netos) e o destaque pula entre os quatro gráficos. O economista monta uma balança com pesinhos para formar um “índice único”; um pesinho é ampliado e ganha a etiqueta laranja VALOR. Frase final em destaque: “correta segundo qual objetivo — e para quem?”.",
+  visual="A cidadã gira um seletor de prioridades (crescimento / fome hoje / netos) e o destaque pula entre os quatro gráficos. A economista monta uma balança com pesinhos para formar um “índice único”; um pesinho é ampliado e ganha a etiqueta laranja VALOR. Frase final em destaque: “correta segundo qual objetivo — e para quem?”.",
   falas=[(CI,"Se eu priorizo crescimento, escolho infraestrutura. Se priorizo quem está passando fome hoje, escolho transferência. Se penso nos meus netos, educação."),
          (EC,"E se eu juntar tudo num único índice, com pesos para cada objetivo?"),
          (CI,"Quem escolhe os pesos?"),
          (EC,"Eu escolho. Ou alguém escolhe. Tá, entendi: os pesos são valores."),
          (N1,"A pergunta qual é a escolha economicamente correta já contém uma escolha ética: correta segundo qual objetivo, e para quem?")]),
  dict(t="Fechamento", bloco="6", tag="síntese",
-  visual="Os gráficos do caso se reorganizam e, sobre cada barra, surgem rostos/silhuetas de pessoas: números viram pessoas. Uma etiqueta “resultado técnico” é arrancada e revela “decisão com autor”. Economista e cidadão aparecem lado a lado, do mesmo lado da mesa.",
+  visual="Os gráficos do caso se reorganizam e, sobre cada barra, surgem rostos/silhuetas de pessoas: números viram pessoas. Uma etiqueta “resultado técnico” é arrancada e revela “decisão com autor”. Economista e cidadã aparecem lado a lado, do mesmo lado da mesa.",
   falas=[(N2,"Nada disso significa abandonar a economia. Sem ela, não saberíamos quanto custa cada opção, nem quais consequências são prováveis. Os modelos e indicadores são indispensáveis para enxergar a realidade."),
          (N1,"O problema não é usar a economia para decidir. É esquecer que as decisões afetam pessoas, e tratá-las como se fossem resultados técnicos, neutros, sem autor."),
          (EC,"Talvez meu trabalho não seja só mostrar os meios. Também é deixar claro quais fins estou assumindo."),

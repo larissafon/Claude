@@ -8,7 +8,7 @@ PAUSA_FALA = 0.6   # respiro entre falas
 TRANSICAO = 2.0    # entrada/saída de cada cena
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from cenas import N1, N2, EC, CI, CENAS
+from cenas import N1, N2, EC, CI, CENAS, ARQ
 
 def fmt(s):
     s = int(round(s)); return f"{s//60}:{s%60:02d}"
@@ -28,7 +28,7 @@ os.makedirs(OUT, exist_ok=True)
 L = ["QUANDO A ECONOMIA DIZ O QUE DEVEMOS FAZER?",
      "Roteiro de falas — audiovisual para Ética e Ciência Econômica",
      f"Duração estimada: {fmt(TOTAL)} ({total_palavras} palavras, ~{round(WPS*60)} palavras/min)",
-     "Vozes: NARRADORA 1, NARRADORA 2, ECONOMISTA, CIDADÃO (sugestão: uma voz por integrante do grupo)",
+     "Vozes: NARRADORA 1, NARRADORA 2, ECONOMISTA, CIDADÃ (sugestão: uma voz por integrante do grupo)",
      "Observação: os valores do caso de R$ 1 bilhão são fictícios e servem só para ilustrar.", ""]
 for i, c in enumerate(CENAS, 1):
     L += ["=" * 64, f"CENA {i:02d} — {c['t'].upper()}   [{fmt(c['ini'])} – {fmt(c['fim'])}]   (bloco {c['bloco']} do roteiro)", "=" * 64, ""]
@@ -112,10 +112,10 @@ h3{{font-size:12px;text-transform:uppercase;letter-spacing:.1em;color:var(--mute
  <div><b>{fmt(TOTAL)}</b><span>duração estimada</span></div>
  <div><b>{len(CENAS)}</b><span>cenas, nos 7 blocos do roteiro</span></div>
  <div><b>{total_palavras}</b><span>palavras de fala</span></div>
- <div><b>4 vozes</b><span>2 narradoras, economista, cidadão</span></div>
+ <div><b>4 vozes</b><span>2 narradoras, economista, cidadã</span></div>
 </div>
 <section class="estilo"><h2>Estilo sugerido: “caderno de economia”</h2>
-<p>Fundo de papel creme, ilustrações planas e tipografia animada. Economista e cidadão aparecem como personagens ilustrados com balões de fala, e cada integrante do grupo grava uma das quatro vozes.</p>
+<p>Fundo de papel creme, ilustrações planas e tipografia animada. Economista e cidadã aparecem como personagens ilustrados com balões de fala, e cada integrante do grupo grava uma das quatro vozes.</p>
 <p><b>Código de cores ao longo do vídeo:</b> <span class="chip" style="background:var(--fato)">azul = FATO</span> (o que é, testável) e <span class="chip" style="background:var(--valor)">laranja = VALOR</span> (o que deve ser). Toda vez que uma frase “técnica” revela uma escolha, ela muda de azul para laranja. Esse é o fio visual que conduz a ideia central.</p>
 <p><b>Som:</b> trilha instrumental leve e de uso livre, em volume baixo sob as vozes, com pausa de silêncio antes da pergunta final.</p></section>
 <p class="eyebrow">Linha do tempo (clique numa cena)</p>
@@ -152,6 +152,6 @@ for voz in (N1, N2, EC, CI):
         for j, (quem, fala) in enumerate(c["falas"], 1):
             if quem != voz: continue
             n += 1
-            L += [f"[cena{i:02d}_fala{j:02d}_{slug(voz)}]   (cena {i:02d}: {c['t']})", fala, ""]
+            L += [f"[cena{i:02d}_fala{j:02d}_{ARQ[voz]}]   (cena {i:02d}: {c['t']})", fala, ""]
     L.insert(1, f"Total: {n} falas")
-    open(os.path.join(OUT, "gravacao", f"falas_{slug(voz)}.txt"), "w").write("\n".join(L) + "\n")
+    open(os.path.join(OUT, "gravacao", f"falas_{ARQ[voz]}.txt"), "w").write("\n".join(L) + "\n")

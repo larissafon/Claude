@@ -90,29 +90,36 @@ HELPERS = r"""
 """
 
 # ---------- personagens (ilustração plana) ----------
-_ECON = """<svg viewBox="0 0 200 260"><path d="M14 260 C14 186 54 160 100 160 C146 160 186 186 186 260Z" fill="#1f6fb2"/>
-<path d="M78 162 L100 214 L122 162Z" fill="#fff"/><path d="M95 172 L105 172 L109 226 L100 238 L91 226Z" fill="#1d2433"/>
-<rect x="86" y="128" width="28" height="36" rx="10" fill="#c98e64"/><circle cx="100" cy="94" r="52" fill="#c98e64"/>
-<path d="M46 96 C44 50 74 36 102 36 C134 36 156 54 154 94 C142 70 122 60 100 62 C80 64 60 74 46 96Z" fill="#2b2b33"/>
-<circle cx="80" cy="100" r="14" fill="#fff" fill-opacity=".35" stroke="#1d2433" stroke-width="4"/><circle cx="120" cy="100" r="14" fill="#fff" fill-opacity=".35" stroke="#1d2433" stroke-width="4"/>
-<line x1="94" y1="100" x2="106" y2="100" stroke="#1d2433" stroke-width="4"/><circle cx="80" cy="101" r="3.5" fill="#1d2433"/><circle cx="120" cy="101" r="3.5" fill="#1d2433"/>
-<path d="M88 126 Q100 134 112 126" stroke="#1d2433" stroke-width="4" fill="none" stroke-linecap="round"/></svg>"""
+_ECON = """<svg viewBox="0 0 200 260">
+<path d="M40 104 C34 52 68 32 100 32 C134 32 166 52 160 104 L164 172 C140 182 60 182 36 172Z" fill="#2b2b33"/>
+<path d="M14 260 C14 186 54 160 100 160 C146 160 186 186 186 260Z" fill="#1f6fb2"/>
+<path d="M78 162 L100 206 L122 162Z" fill="#fff"/>
+<path d="M78 162 L94 202 L72 244 M122 162 L106 202 L128 244" stroke="#174f80" stroke-width="5" fill="none" stroke-linejoin="round"/>
+<circle cx="100" cy="196" r="5" fill="#d9a441"/>
+<rect x="86" y="128" width="28" height="36" rx="10" fill="#c98e64"/><circle cx="100" cy="96" r="50" fill="#c98e64"/>
+<path d="M50 96 C50 56 76 42 104 44 C132 46 152 64 150 96 C136 76 112 64 88 68 C72 72 58 82 50 96Z" fill="#2b2b33"/>
+<circle cx="80" cy="102" r="14" fill="#fff" fill-opacity=".35" stroke="#1d2433" stroke-width="4"/><circle cx="120" cy="102" r="14" fill="#fff" fill-opacity=".35" stroke="#1d2433" stroke-width="4"/>
+<line x1="94" y1="102" x2="106" y2="102" stroke="#1d2433" stroke-width="4"/><circle cx="80" cy="103" r="3.5" fill="#1d2433"/><circle cx="120" cy="103" r="3.5" fill="#1d2433"/>
+<circle cx="51" cy="120" r="5" fill="#d9a441"/><circle cx="149" cy="120" r="5" fill="#d9a441"/>
+<path d="M88 126 Q100 134 112 126" stroke="#a8473a" stroke-width="5" fill="none" stroke-linecap="round"/></svg>"""
 
-_CID = """<svg viewBox="0 0 200 260"><path d="M14 260 C14 186 54 160 100 160 C146 160 186 186 186 260Z" fill="#d66b29"/>
-<path d="M76 162 Q100 186 124 162" stroke="#b9551b" stroke-width="6" fill="none"/>
-<rect x="86" y="128" width="28" height="36" rx="10" fill="#8d5a3b"/><circle cx="100" cy="94" r="52" fill="#8d5a3b"/>
-<circle cx="62" cy="62" r="20" fill="#1d1a1a"/><circle cx="86" cy="46" r="22" fill="#1d1a1a"/><circle cx="114" cy="46" r="22" fill="#1d1a1a"/>
-<circle cx="138" cy="62" r="20" fill="#1d1a1a"/><circle cx="100" cy="40" r="18" fill="#1d1a1a"/>
-<circle cx="80" cy="101" r="5" fill="#1d1a1a"/><circle cx="120" cy="101" r="5" fill="#1d1a1a"/>
-<path d="M72 86 L88 84" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round"/><path d="M112 82 L128 86" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round"/>
-<path d="M90 126 Q100 130 110 126" stroke="#1d1a1a" stroke-width="4" fill="none" stroke-linecap="round"/></svg>"""
+_CID = """<svg viewBox="0 0 200 260">
+<circle cx="56" cy="78" r="30" fill="#1d1a1a"/><circle cx="144" cy="78" r="30" fill="#1d1a1a"/><circle cx="44" cy="114" r="28" fill="#1d1a1a"/><circle cx="156" cy="114" r="28" fill="#1d1a1a"/><circle cx="48" cy="148" r="26" fill="#1d1a1a"/><circle cx="152" cy="148" r="26" fill="#1d1a1a"/><circle cx="62" cy="176" r="22" fill="#1d1a1a"/><circle cx="138" cy="176" r="22" fill="#1d1a1a"/><circle cx="74" cy="46" r="28" fill="#1d1a1a"/><circle cx="126" cy="46" r="28" fill="#1d1a1a"/><circle cx="100" cy="36" r="30" fill="#1d1a1a"/>
+<path d="M14 260 C14 186 54 160 100 160 C146 160 186 186 186 260Z" fill="#d66b29"/>
+<path d="M74 162 Q100 190 126 162" stroke="#b9551b" stroke-width="6" fill="none"/>
+<rect x="86" y="128" width="28" height="36" rx="10" fill="#8d5a3b"/><circle cx="100" cy="98" r="50" fill="#8d5a3b"/>
+<circle cx="70" cy="62" r="18" fill="#1d1a1a"/><circle cx="88" cy="52" r="18" fill="#1d1a1a"/><circle cx="108" cy="50" r="18" fill="#1d1a1a"/><circle cx="128" cy="58" r="18" fill="#1d1a1a"/>
+<circle cx="80" cy="104" r="5" fill="#1d1a1a"/><circle cx="120" cy="104" r="5" fill="#1d1a1a"/>
+<path d="M70 92 L86 88" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round"/><path d="M114 88 L130 92" stroke="#1d1a1a" stroke-width="4" stroke-linecap="round"/>
+<circle cx="52" cy="124" r="7" fill="none" stroke="#d9a441" stroke-width="3"/><circle cx="148" cy="124" r="7" fill="none" stroke="#d9a441" stroke-width="3"/>
+<path d="M90 128 Q100 134 110 128" stroke="#6e2e22" stroke-width="5" fill="none" stroke-linecap="round"/></svg>"""
 
 _GENTE = """<svg viewBox="0 0 100 130"><circle cx="50" cy="32" r="24" fill="{c}"/><path d="M8 130 C8 84 26 64 50 64 C74 64 92 84 92 130Z" fill="{c}"/></svg>"""
 
 
 def pessoa(tipo, pid, left, top, w, nome=True, h=True):
     svg = _ECON if tipo == "ec" else _CID
-    rot = ('<div class="nome" style="color:%s">%s</div>' % (("var(--fato)", "Economista") if tipo == "ec" else ("#c2541c", "Cidadão"))) if nome else ""
+    rot = ('<div class="nome" style="color:%s">%s</div>' % (("var(--fato)", "Economista") if tipo == "ec" else ("#c2541c", "Cidadã"))) if nome else ""
     return f'<div class="pessoa{" h" if h else ""}" id="{pid}" style="left:{left}px;top:{top}px;width:{w}px">{svg}{rot}</div>'
 
 
@@ -121,7 +128,7 @@ def gente(cor, extra=""):
 
 
 def balao(bid, quem, texto, left, top, w, lado="esq"):
-    cor = "var(--fato)" if quem == "Economista" else "#c2541c" if quem == "Cidadão" else "var(--suave)"
+    cor = "var(--fato)" if quem == "Economista" else "#c2541c" if quem == "Cidadã" else "var(--suave)"
     return (f'<div class="balao {lado} h" id="{bid}" style="left:{left}px;top:{top}px;width:{w}px">'
             f'<span class="quem" style="color:{cor}">{quem}</span>{texto}</div>')
 
@@ -195,9 +202,9 @@ def cena2():
   <div class="abs mao suave" style="right:30px;bottom:18px;font-size:30px">números ilustrativos</div>
 </div>
 {balao("s2-bal0", "Economista", "A economia cresce, a riqueza aumenta!", 80, 140, 440)}
-{balao("s2-bal1", "Cidadão", "E quem fica com essa riqueza?", 1400, 150, 440, "dir")}
+{balao("s2-bal1", "Cidadã", "E quem fica com essa riqueza?", 1400, 150, 440, "dir")}
 {balao("s2-bal2", "Economista", "A desigualdade aumenta… mas, no agregado, todos <i>poderiam</i> estar melhor.", 80, 90, 460)}
-{balao("s2-bal3", "Cidadão", '<span class="titulo valor" style="font-size:52px">Eficiente para quem?</span>', 1380, 140, 480, "dir")}
+{balao("s2-bal3", "Cidadã", '<span class="titulo valor" style="font-size:52px">Eficiente para quem?</span>', 1380, 140, 480, "dir")}
 <div id="s2-n" class="abs cartao h" style="left:420px;right:420px;top:200px;padding:56px 40px;text-align:center">
   <div class="titulo s2-n" style="font-size:66px">Riqueza maior,<br>desigualdade maior.</div>
   <div class="titulo valor s2-n" style="font-size:76px;margin-top:24px">É uma boa política?</div>
@@ -254,7 +261,7 @@ def cena3():
 {pessoa("ec", "s3-ec", 260, 500, 230)}
 {balao("s3-b3", "Economista", "Eu mostro as consequências; quem decide são os outros.", 540, 470, 520)}
 {pessoa("cid", "s3-ci", 1430, 500, 230)}
-{balao("s3-b4", "Cidadão", "Será? Vamos ver se é tão simples assim.", 1000, 530, 400, "dir")}
+{balao("s3-b4", "Cidadã", "Será? Vamos ver se é tão simples assim.", 1000, 530, 400, "dir")}
 """
     js = r"""
         moldura();
@@ -328,13 +335,13 @@ def cena5():
 </div>
 {"".join(f'<div class="abs mao s5-u h" style="left:{x}px;top:{y}px;font-size:44px;color:#c2541c">{t}</div>' for t, x, y in [("emprego", 980, 196), ("escola", 1140, 196), ("banco", 1280, 196)])}
 <div id="s5-quem" class="abs titulo valor h" style="left:760px;width:400px;top:760px;text-align:center;font-size:60px">quem decide?</div>
-{balao("s5-b0", "Cidadão", "Mas o que é uma necessidade?", 1420, 230, 440, "dir")}
+{balao("s5-b0", "Cidadã", "Mas o que é uma necessidade?", 1420, 230, 440, "dir")}
 {balao("s5-b1", "Economista", "Alimentação, moradia, saúde.", 40, 250, 400)}
-{balao("s5-b2", "Cidadão", "E o celular? Sem ele não procuro emprego…", 1420, 200, 440, "dir")}
+{balao("s5-b2", "Cidadã", "E o celular? Sem ele não procuro emprego…", 1420, 200, 440, "dir")}
 {balao("s5-b3", "Economista", "Hum… talvez seja uma necessidade.", 40, 250, 400)}
-{balao("s5-b4", "Cidadão", "E uma viagem de férias?", 1420, 250, 440, "dir")}
+{balao("s5-b4", "Cidadã", "E uma viagem de férias?", 1420, 250, 440, "dir")}
 {balao("s5-b5", "Economista", "Aí já é um desejo.", 40, 280, 380)}
-{balao("s5-b6", "Cidadão", "Para quem? Quem decide?", 1420, 250, 440, "dir")}
+{balao("s5-b6", "Cidadã", "Para quem? Quem decide?", 1420, 250, 440, "dir")}
 """
     js = r"""
         moldura();
@@ -419,7 +426,7 @@ def cena7():
 </div>
 <div id="s7-mulher" class="abs mao h" style="left:420px;top:680px;font-size:50px;color:var(--valor)">feito majoritariamente por mulheres</div>
 <div id="s7-neutro" class="abs mao h" style="left:1080px;top:680px;font-size:50px">→ nos números, parece neutro</div>
-{balao("s7-b2", "Cidadão", "Escolher o indicador já é escolher o que conta.", 200, 660, 640)}
+{balao("s7-b2", "Cidadã", "Escolher o indicador já é escolher o que conta.", 200, 660, 640)}
 {balao("s7-b3", "Economista", "…e quem conta.", 1300, 670, 380, "dir")}
 <div id="s7-tres" class="abs titulo centro h" style="top:290px;font-size:76px"><span class="s7-w">o que medir</span> · <span class="s7-w">o que priorizar</span> · <span class="s7-w">para quem</span></div>
 <div id="s7-dv" class="abs centro h" style="top:470px"><span class="selo valor" style="font-size:40px">DECISÕES DE VALOR</span></div>
@@ -516,7 +523,7 @@ def cena9():
 <div id="s9-fet" class="abs centro h" style="top:510px"><span class="selo valor" style="font-size:38px">FETICHISMO DA MERCADORIA</span>
   <div class="suave" style="font-size:28px;font-weight:700;margin-top:14px">Marx, <i>O Capital</i>, Livro I (1867), cap. 1</div></div>
 {pessoa("cid", "s9-ci", 1600, 460, 230)}
-{balao("s9-b2", "Cidadão", "“Todos poderiam estar melhor” apaga quem ganha e quem perde.", 1300, 170, 460, "dir")}
+{balao("s9-b2", "Cidadã", "“Todos poderiam estar melhor” apaga quem ganha e quem perde.", 1300, 170, 460, "dir")}
 <div id="s9-gp" class="abs h" style="left:240px;top:620px;display:flex;gap:30px"><span class="selo" style="background:var(--verde);font-size:34px">quem ganha?</span><span class="selo valor" style="font-size:34px">quem perde?</span></div>
 """
     js = r"""
@@ -619,7 +626,7 @@ def cena11():
   <circle cx="400" cy="120" r="18" fill="#d66b29"/>
 </svg>
 <div id="s11-ind" class="abs centro h" style="top:740px;font-size:40px;font-weight:700">índice único = soma de <span class="valor">peso</span> × resultado</div>
-{balao("s11-b2", "Cidadão", '<span class="titulo valor" style="font-size:48px">Quem escolhe os pesos?</span>', 1380, 420, 460, "dir")}
+{balao("s11-b2", "Cidadã", '<span class="titulo valor" style="font-size:48px">Quem escolhe os pesos?</span>', 1380, 420, 460, "dir")}
 <div id="s11-val" class="abs selo valor h" style="left:610px;top:240px;font-size:34px">VALOR</div>
 {balao("s11-b3", "Economista", "…Eu escolho. Ou alguém escolhe. Os pesos são valores.", 100, 300, 480)}
 <div id="s11-frase" class="abs titulo centro h" style="left:160px;right:160px;top:260px;font-size:86px">correta segundo <span class="valor">qual objetivo</span> — e <span class="valor">para quem</span>?</div>
@@ -670,7 +677,7 @@ def cena12():
 {pessoa("cid", "s12-ci", 1040, 380, 260)}
 <div id="s12-mesa" class="abs h" style="left:560px;top:760px;width:800px;height:18px;border-radius:9px;background:var(--tinta)"></div>
 {balao("s12-b2", "Economista", "Deixar claro quais fins estou assumindo.", 130, 220, 460)}
-{balao("s12-b3", "Cidadão", "E abrir espaço para as pessoas afetadas participarem.", 1330, 200, 480, "dir")}
+{balao("s12-b3", "Cidadã", "E abrir espaço para as pessoas afetadas participarem.", 1330, 200, 480, "dir")}
 """
     js = r"""
         moldura();
@@ -704,7 +711,7 @@ def cena13():
 <div id="s13-q" class="abs titulo centro h" style="left:180px;right:180px;top:290px;font-size:104px">A economia pode, <span class="valor">sozinha</span>, dizer o que devemos fazer?</div>
 <div id="s13-cred" class="abs h" style="left:140px;right:140px;top:70px;text-align:center">
   <div class="titulo" style="font-size:60px">Quando a economia diz o que <span class="valor">devemos</span> fazer?</div>
-  <div style="font-size:32px;font-weight:700;margin-top:40px;line-height:1.5">Ana Luísa Mathias Costa · Fernada Cruz de Souza<br>Isis Mirelle de Santana Silva · Larissa Carneiro Fonseca</div>
+  <div style="font-size:32px;font-weight:700;margin-top:40px;line-height:1.5">Ana Luísa Mathias Costa · Fernanda Cruz de Souza<br>Isis Mirelle de Santana Silva · Larissa Carneiro Fonseca</div>
   <div class="suave" style="font-size:30px;font-weight:600;margin-top:30px;line-height:1.5">Ética e Ciência Econômica · Prof. Múcio Tosta Gonçalves<br>Ciências Econômicas (COECO) · 2º semestre de 2026</div>
   <div class="suave" style="font-size:28px;font-weight:600;margin-top:34px;line-height:1.5">Referências: Hume, <i>Tratado da Natureza Humana</i> (1739–40) · Smith, <i>A Riqueza das Nações</i> (1776) ·
   Marx, <i>Grundrisse</i> (1857–58) e <i>O Capital</i>, Livro I (1867) · ONU, <i>Sistema de Contas Nacionais</i> (2008)<br>

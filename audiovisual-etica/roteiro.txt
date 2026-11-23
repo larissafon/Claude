@@ -1,7 +1,7 @@
 QUANDO A ECONOMIA DIZ O QUE DEVEMOS FAZER?
 Roteiro de falas — audiovisual para Ética e Ciência Econômica
 Duração estimada: 9:32 (1125 palavras, ~138 palavras/min)
-Vozes: NARRADORA 1, NARRADORA 2, ECONOMISTA, CIDADÃO (sugestão: uma voz por integrante do grupo)
+Vozes: NARRADORA 1, NARRADORA 2, ECONOMISTA, CIDADÃ (sugestão: uma voz por integrante do grupo)
 Observação: os valores do caso de R$ 1 bilhão são fictícios e servem só para ilustrar.
 
 ================================================================
@@ -21,13 +21,13 @@ CENA 02 — A PERGUNTA   [0:35 – 1:20]   (bloco 1 do roteiro)
 ECONOMISTA:
 Tenho aqui uma proposta. Segundo o nosso modelo, esta política aumenta a renda total do país. A economia cresce, a riqueza aumenta.
 
-CIDADÃO:
+CIDADÃ:
 E quem fica com essa riqueza?
 
 ECONOMISTA:
 Bom... o modelo também indica que a desigualdade aumenta. Os mais ricos ganham bem mais que os mais pobres. Mas, no agregado, todos poderiam estar melhor.
 
-CIDADÃO:
+CIDADÃ:
 Poderiam. Mas vão estar? Você diz que é eficiente. Eficiente para quem?
 
 NARRADORA 1:
@@ -49,7 +49,7 @@ No século dezoito, o filósofo David Hume já apontava que não se chega a um d
 ECONOMISTA:
 Então meu trabalho é só a parte positiva. Eu mostro as consequências; quem decide são os outros.
 
-CIDADÃO:
+CIDADÃ:
 Será? Vamos ver se é tão simples assim.
 
 ================================================================
@@ -60,31 +60,31 @@ NARRADORA 1:
 Para avançar, vale distinguir duas palavras que costumamos usar como sinônimos. Moral são os valores vividos: os costumes, as regras e as convicções que orientam o que uma sociedade considera certo ou errado no dia a dia.
 
 NARRADORA 2:
-Ética é a reflexão sobre esses valores: perguntar por que os seguimos, se fazem sentido e a quem servem. Quando o cidadão pergunta eficiente para quem, ele está fazendo exatamente isso: trazendo a reflexão ética para dentro de uma conversa que parecia apenas técnica.
+Ética é a reflexão sobre esses valores: perguntar por que os seguimos, se fazem sentido e a quem servem. Quando a cidadã pergunta eficiente para quem, ela está fazendo exatamente isso: trazendo a reflexão ética para dentro de uma conversa que parecia apenas técnica.
 
 ================================================================
 CENA 05 — O QUE É UMA NECESSIDADE?   [3:00 – 3:40]   (bloco 3 do roteiro)
 ================================================================
 
-CIDADÃO:
+CIDADÃ:
 Me responde uma coisa. A economia diz que estuda como satisfazer as necessidades das pessoas. Mas o que é uma necessidade?
 
 ECONOMISTA:
 Alimentação, moradia, saúde. Isso é básico.
 
-CIDADÃO:
+CIDADÃ:
 E um celular? Hoje, sem celular, eu não consigo procurar emprego, falar com a escola do meu filho, acessar o banco.
 
 ECONOMISTA:
 Hum... talvez seja uma necessidade, então.
 
-CIDADÃO:
+CIDADÃ:
 E uma viagem de férias?
 
 ECONOMISTA:
 Aí já é um desejo.
 
-CIDADÃO:
+CIDADÃ:
 Para quem? Quem decide onde termina a necessidade e começa o desejo?
 
 ================================================================
@@ -105,12 +105,12 @@ CENA 07 — A ECONOMIA COMEÇA A ESCOLHER   [4:30 – 5:17]   (bloco 4 do roteir
 ================================================================
 
 NARRADORA 1:
-Voltemos ao economista que dizia apenas descrever. Antes de qualquer cálculo, ele precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?
+Voltemos à economista que dizia apenas descrever. Antes de qualquer cálculo, ela precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?
 
 NARRADORA 2:
 Um exemplo: o PIB não contabiliza o trabalho doméstico e de cuidado não remunerado, realizado majoritariamente por mulheres. Uma política que aumente esse trabalho invisível pode aparecer, nos números, como neutra ou até positiva.
 
-CIDADÃO:
+CIDADÃ:
 Então escolher o indicador já é escolher o que conta.
 
 ECONOMISTA:
@@ -139,7 +139,7 @@ A crítica marxiana vai na raiz desse ponto de partida. Para Marx, o indivíduo 
 NARRADORA 1:
 As pessoas produzem e consomem dentro de relações sociais: entre trabalhadores e proprietários, entre classes, com conflitos de interesse. Ao tratar preços e mercados como fenômenos naturais, a teoria esconde que por trás das mercadorias há relações entre pessoas. Marx chamou isso de fetichismo da mercadoria.
 
-CIDADÃO:
+CIDADÃ:
 Então quando o modelo diz todos poderiam estar melhor, ele está apagando quem ganha e quem perde.
 
 ================================================================
@@ -152,7 +152,7 @@ Vamos testar tudo isso em um caso hipotético. O governo tem um bilhão de reais
 ECONOMISTA:
 Rodei as simulações. Infraestrutura gera o maior crescimento no curto prazo. Transferência de renda reduz mais a pobreza agora. Saúde salva mais vidas e reduz doenças. Educação tem os maiores ganhos, mas só daqui a quinze ou vinte anos.
 
-CIDADÃO:
+CIDADÃ:
 E qual é a melhor?
 
 ECONOMISTA:
@@ -165,13 +165,13 @@ Os números são fictícios, mas o dilema é real. Cada gráfico mostra um resul
 CENA 11 — QUEM ESCOLHE OS PESOS?   [7:41 – 8:16]   (bloco 5 do roteiro)
 ================================================================
 
-CIDADÃO:
+CIDADÃ:
 Se eu priorizo crescimento, escolho infraestrutura. Se priorizo quem está passando fome hoje, escolho transferência. Se penso nos meus netos, educação.
 
 ECONOMISTA:
 E se eu juntar tudo num único índice, com pesos para cada objetivo?
 
-CIDADÃO:
+CIDADÃ:
 Quem escolhe os pesos?
 
 ECONOMISTA:
@@ -193,7 +193,7 @@ O problema não é usar a economia para decidir. É esquecer que as decisões af
 ECONOMISTA:
 Talvez meu trabalho não seja só mostrar os meios. Também é deixar claro quais fins estou assumindo.
 
-CIDADÃO:
+CIDADÃ:
 E abrir espaço para que as pessoas afetadas participem dessa escolha.
 
 ================================================================

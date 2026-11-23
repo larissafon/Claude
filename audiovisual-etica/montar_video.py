@@ -15,7 +15,7 @@ import glob, html, json, os, re, subprocess, sys, unicodedata
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQUI)
-from cenas import CENAS, N1, N2, EC, CI  # noqa: E402
+from cenas import CENAS, N1, N2, EC, CI, ARQ  # noqa: E402
 import visuais  # noqa: E402
 
 VIDEO = os.path.join(AQUI, "video")
@@ -27,7 +27,7 @@ GAP = 0.7            # respiro entre falas
 PAD_INI, PAD_FIM = 1.0, 1.5
 # folgas específicas por cena (início, fim) para entradas e momentos sem fala
 FOLGA = {1: (1.5, 3.5), 2: (1.6, 1.5), 10: (1.2, 3.0), 13: (1.0, 22.0)}
-LEGENDAS = True
+LEGENDAS = False   # legendas desligadas a pedido do grupo
 VOL_VOZ, VOL_TRILHA = 1.0, 0.12
 
 COR_VOZ = {N1: "#6b4fa3", N2: "#2f8a74", EC: "#1f6fb2", CI: "#c2541c"}
@@ -68,7 +68,7 @@ def calcular_tempos():
         cur = pre
         falas = []
         for j, (quem, txt) in enumerate(c["falas"], 1):
-            fid = f"cena{i:02d}_fala{j:02d}_{slug(quem)}"
+            fid = f"cena{i:02d}_fala{j:02d}_{ARQ[quem]}"
             aud = preparar_audio(fid)
             dur = aud[1] if aud else round(len(txt.split()) / WPS, 2)
             falas.append(dict(id=fid, quem=quem, txt=txt, s=round(cur, 2), e=round(cur + dur, 2),
@@ -163,8 +163,11 @@ def main():
 '''
         open(os.path.join(VIDEO, "compositions", f"{cid}.html"), "w").write(doc)
 
+    leg = os.path.join(VIDEO, "compositions", "legendas.html")
     if LEGENDAS:
-        open(os.path.join(VIDEO, "compositions", "legendas.html"), "w").write(legendas(plano, total))
+        open(leg, "w").write(legendas(plano, total))
+    elif os.path.exists(leg):
+        os.remove(leg)
 
     hosts = []
     for c in plano:
