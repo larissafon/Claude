@@ -1,74 +1,74 @@
 {
- "total": 568.82,
+ "total": 549.4,
  "cenas": [
   {
    "n": 1,
    "titulo": "Abertura",
    "ini": 0.0,
-   "dur": 33.96,
+   "dur": 31.91,
    "falas": [
     {
      "id": "cena01_fala01_narradora1",
      "quem": "NARRADORA 1",
      "txt": "Toda semana, alguma decisão pública chega até nós embalada em números: crescimento, custo, eficiência. E quase sempre vem acompanhada de uma frase: essa é a escolha economicamente correta. Mas o que exatamente essa frase está dizendo? Ela descreve o mundo, ou já está decidindo por nós como ele deve ser?",
      "s": 1.5,
-     "e": 23.24,
-     "audio": null
+     "e": 21.54,
+     "audio": "assets/vozes/cena01_fala01_narradora1.wav"
     },
     {
      "id": "cena01_fala02_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Este audiovisual parte de uma pergunta simples: quando a economia diz o que devemos fazer?",
-     "s": 23.94,
-     "e": 30.46,
-     "audio": null
+     "s": 22.24,
+     "e": 28.41,
+     "audio": "assets/vozes/cena01_fala02_narradora2.wav"
     }
    ]
   },
   {
    "n": 2,
    "titulo": "A pergunta",
-   "ini": 33.96,
-   "dur": 45.81,
+   "ini": 31.91,
+   "dur": 45.78,
    "falas": [
     {
      "id": "cena02_fala01_economista",
      "quem": "ECONOMISTA",
      "txt": "Tenho aqui uma proposta. Segundo o nosso modelo, esta política aumenta a renda total do país. A economia cresce, a riqueza aumenta.",
      "s": 1.6,
-     "e": 11.17,
-     "audio": null
+     "e": 10.96,
+     "audio": "assets/vozes/cena02_fala01_economista.wav"
     },
     {
      "id": "cena02_fala02_cidadao",
      "quem": "CIDADÃ",
      "txt": "E quem fica com essa riqueza?",
-     "s": 11.87,
-     "e": 14.48,
-     "audio": null
+     "s": 11.66,
+     "e": 13.93,
+     "audio": "assets/vozes/cena02_fala02_cidadao.wav"
     },
     {
      "id": "cena02_fala03_economista",
      "quem": "ECONOMISTA",
      "txt": "Bom... o modelo também indica que a desigualdade aumenta. Os mais ricos ganham bem mais que os mais pobres. Mas, no agregado, todos poderiam estar melhor.",
-     "s": 15.18,
-     "e": 26.48,
-     "audio": null
+     "s": 14.63,
+     "e": 25.57,
+     "audio": "assets/vozes/cena02_fala03_economista.wav"
     },
     {
      "id": "cena02_fala04_cidadao",
      "quem": "CIDADÃ",
      "txt": "Poderiam. Mas vão estar? Você diz que é eficiente. Eficiente para quem?",
-     "s": 27.18,
-     "e": 32.4,
-     "audio": null
+     "s": 26.27,
+     "e": 32.37,
+     "audio": "assets/vozes/cena02_fala04_cidadao.wav"
     },
     {
      "id": "cena02_fala05_narradora1",
      "quem": "NARRADORA 1",
      "txt": "Riqueza maior, desigualdade maior. É uma boa política? Repare que os números não respondem a isso sozinhos. Para responder, precisamos dizer o que consideramos bom.",
-     "s": 33.1,
-     "e": 44.31,
+     "s": 33.07,
+     "e": 44.28,
      "audio": "assets/vozes/cena02_fala05_narradora1.wav"
     }
    ]
@@ -76,71 +76,71 @@
   {
    "n": 3,
    "titulo": "Fato e valor",
-   "ini": 79.77,
-   "dur": 60.52,
+   "ini": 77.69,
+   "dur": 54.41,
    "falas": [
     {
      "id": "cena03_fala01_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Existem dois tipos de frase nessa conversa. A primeira: a política aumenta o PIB em X por cento. Ela pode ser testada: os dados confirmam ou não. É uma afirmação sobre o que é.",
      "s": 1.0,
-     "e": 15.78,
-     "audio": null
+     "e": 11.36,
+     "audio": "assets/vozes/cena03_fala01_narradora2.wav"
     },
     {
      "id": "cena03_fala02_narradora1",
      "quem": "NARRADORA 1",
      "txt": "A segunda: devemos escolher essa política. Nenhum dado, sozinho, confirma essa frase. Ela depende do que valorizamos: crescimento, igualdade, liberdade, segurança. É uma afirmação sobre o que deve ser.",
-     "s": 16.48,
-     "e": 29.09,
-     "audio": null
+     "s": 12.06,
+     "e": 25.3,
+     "audio": "assets/vozes/cena03_fala02_narradora1.wav"
     },
     {
      "id": "cena03_fala03_narradora2",
      "quem": "NARRADORA 2",
      "txt": "No século dezoito, o filósofo David Hume já apontava que não se chega a um deve partindo apenas de um é. Na economia, essa separação aparece como a distinção entre economia positiva, que descreve, e economia normativa, que prescreve.",
-     "s": 29.79,
-     "e": 46.75,
-     "audio": null
+     "s": 26.0,
+     "e": 41.29,
+     "audio": "assets/vozes/cena03_fala03_narradora2.wav"
     },
     {
      "id": "cena03_fala04_economista",
      "quem": "ECONOMISTA",
      "txt": "Então meu trabalho é só a parte positiva. Eu mostro as consequências; quem decide são os outros.",
-     "s": 47.45,
-     "e": 54.84,
-     "audio": null
+     "s": 41.99,
+     "e": 48.8,
+     "audio": "assets/vozes/cena03_fala04_economista.wav"
     },
     {
      "id": "cena03_fala05_cidadao",
      "quem": "CIDADÃ",
      "txt": "Será? Vamos ver se é tão simples assim.",
-     "s": 55.54,
-     "e": 59.02,
-     "audio": null
+     "s": 49.5,
+     "e": 52.91,
+     "audio": "assets/vozes/cena03_fala05_cidadao.wav"
     }
    ]
   },
   {
    "n": 4,
    "titulo": "Moral e ética",
-   "ini": 140.29,
-   "dur": 36.39,
+   "ini": 132.1,
+   "dur": 34.41,
    "falas": [
     {
      "id": "cena04_fala01_narradora1",
      "quem": "NARRADORA 1",
      "txt": "Para avançar, vale distinguir duas palavras que costumamos usar como sinônimos. Moral são os valores vividos: os costumes, as regras e as convicções que orientam o que uma sociedade considera certo ou errado no dia a dia.",
      "s": 1.0,
-     "e": 17.09,
-     "audio": null
+     "e": 15.11,
+     "audio": "assets/vozes/cena04_fala01_narradora1.wav"
     },
     {
      "id": "cena04_fala02_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Ética é a reflexão sobre esses valores: perguntar por que os seguimos, se fazem sentido e a quem servem. Quando a cidadã pergunta eficiente para quem, ela está fazendo exatamente isso: trazendo a reflexão ética para dentro de uma conversa que parecia apenas técnica.",
-     "s": 17.79,
-     "e": 34.89,
+     "s": 15.81,
+     "e": 32.91,
      "audio": "assets/vozes/cena04_fala02_narradora2.wav"
     }
    ]
@@ -148,152 +148,152 @@
   {
    "n": 5,
    "titulo": "O que é uma necessidade?",
-   "ini": 176.68,
-   "dur": 39.74,
+   "ini": 166.51,
+   "dur": 39.42,
    "falas": [
     {
      "id": "cena05_fala01_cidadao",
      "quem": "CIDADÃ",
      "txt": "Me responde uma coisa. A economia diz que estuda como satisfazer as necessidades das pessoas. Mas o que é uma necessidade?",
      "s": 1.0,
-     "e": 10.13,
-     "audio": null
+     "e": 10.0,
+     "audio": "assets/vozes/cena05_fala01_cidadao.wav"
     },
     {
      "id": "cena05_fala02_economista",
      "quem": "ECONOMISTA",
      "txt": "Alimentação, moradia, saúde. Isso é básico.",
-     "s": 10.83,
-     "e": 13.44,
-     "audio": null
+     "s": 10.7,
+     "e": 15.0,
+     "audio": "assets/vozes/cena05_fala02_economista.wav"
     },
     {
      "id": "cena05_fala03_cidadao",
      "quem": "CIDADÃ",
      "txt": "E um celular? Hoje, sem celular, eu não consigo procurar emprego, falar com a escola do meu filho, acessar o banco.",
-     "s": 14.14,
-     "e": 23.27,
-     "audio": null
+     "s": 15.7,
+     "e": 23.53,
+     "audio": "assets/vozes/cena05_fala03_cidadao.wav"
     },
     {
      "id": "cena05_fala04_economista",
      "quem": "ECONOMISTA",
      "txt": "Hum... talvez seja uma necessidade, então.",
-     "s": 23.97,
-     "e": 26.58,
-     "audio": null
+     "s": 24.23,
+     "e": 27.24,
+     "audio": "assets/vozes/cena05_fala04_economista.wav"
     },
     {
      "id": "cena05_fala05_cidadao",
      "quem": "CIDADÃ",
      "txt": "E uma viagem de férias?",
-     "s": 27.28,
-     "e": 29.45,
-     "audio": null
+     "s": 27.94,
+     "e": 29.84,
+     "audio": "assets/vozes/cena05_fala05_cidadao.wav"
     },
     {
      "id": "cena05_fala06_economista",
      "quem": "ECONOMISTA",
      "txt": "Aí já é um desejo.",
-     "s": 30.15,
-     "e": 32.32,
-     "audio": null
+     "s": 30.54,
+     "e": 32.55,
+     "audio": "assets/vozes/cena05_fala06_economista.wav"
     },
     {
      "id": "cena05_fala07_cidadao",
      "quem": "CIDADÃ",
      "txt": "Para quem? Quem decide onde termina a necessidade e começa o desejo?",
-     "s": 33.02,
-     "e": 38.24,
-     "audio": null
+     "s": 33.25,
+     "e": 37.92,
+     "audio": "assets/vozes/cena05_fala07_cidadao.wav"
     }
    ]
   },
   {
    "n": 6,
    "titulo": "Necessidade, desejo e demanda",
-   "ini": 216.42,
-   "dur": 49.99,
+   "ini": 205.93,
+   "dur": 43.35,
    "falas": [
     {
      "id": "cena06_fala01_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Podemos separar três ideias. Necessidades são condições para viver com dignidade em uma determinada sociedade e época. Desejos são moldados pela cultura, pela publicidade, pelo que é visto como normal ou desejável.",
      "s": 1.0,
-     "e": 14.91,
-     "audio": null
+     "e": 14.11,
+     "audio": "assets/vozes/cena06_fala01_narradora2.wav"
     },
     {
      "id": "cena06_fala02_narradora1",
      "quem": "NARRADORA 1",
      "txt": "E demanda é outra coisa: é o desejo sustentado por poder de compra. Adam Smith já distinguia a simples vontade de ter algo da demanda efetiva, aquela de quem pode pagar.",
-     "s": 15.61,
-     "e": 29.09,
-     "audio": null
+     "s": 14.81,
+     "e": 27.58,
+     "audio": "assets/vozes/cena06_fala02_narradora1.wav"
     },
     {
      "id": "cena06_fala03_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Aqui está o ponto: o mercado responde à demanda, não à necessidade. Uma pessoa com fome e sem dinheiro não aparece na curva de demanda. Se a economia olha apenas para o que é demandado, quem não pode pagar simplesmente some da análise.",
-     "s": 29.79,
-     "e": 48.49,
-     "audio": null
+     "s": 28.28,
+     "e": 41.85,
+     "audio": "assets/vozes/cena06_fala03_narradora2.wav"
     }
    ]
   },
   {
    "n": 7,
    "titulo": "A economia começa a escolher",
-   "ini": 266.41,
-   "dur": 46.59,
+   "ini": 249.28,
+   "dur": 44.29,
    "falas": [
     {
      "id": "cena07_fala01_narradora1",
      "quem": "NARRADORA 1",
      "txt": "Voltemos à economista que dizia apenas descrever. Antes de qualquer cálculo, ela precisa decidir: o que vou medir? Qual indicador vai representar estar melhor?",
      "s": 1.0,
-     "e": 11.43,
-     "audio": null
+     "e": 11.89,
+     "audio": "assets/vozes/cena07_fala01_narradora1.wav"
     },
     {
      "id": "cena07_fala02_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Um exemplo: o PIB não contabiliza o trabalho doméstico e de cuidado não remunerado, realizado majoritariamente por mulheres. Uma política que aumente esse trabalho invisível pode aparecer, nos números, como neutra ou até positiva.",
-     "s": 12.13,
-     "e": 26.91,
-     "audio": null
+     "s": 12.59,
+     "e": 26.57,
+     "audio": "assets/vozes/cena07_fala02_narradora2.wav"
     },
     {
      "id": "cena07_fala03_cidadao",
      "quem": "CIDADÃ",
      "txt": "Então escolher o indicador já é escolher o que conta.",
-     "s": 27.61,
-     "e": 31.96,
-     "audio": null
+     "s": 27.27,
+     "e": 30.93,
+     "audio": "assets/vozes/cena07_fala03_cidadao.wav"
     },
     {
      "id": "cena07_fala04_economista",
      "quem": "ECONOMISTA",
      "txt": "E quem conta.",
-     "s": 32.66,
-     "e": 33.96,
-     "audio": null
+     "s": 31.63,
+     "e": 33.07,
+     "audio": "assets/vozes/cena07_fala04_economista.wav"
     },
     {
      "id": "cena07_fala05_narradora1",
      "quem": "NARRADORA 1",
      "txt": "Escolher o que medir, o que priorizar e para quem: essas são decisões de valor, tomadas antes mesmo de o modelo começar a rodar.",
-     "s": 34.66,
-     "e": 45.09,
-     "audio": null
+     "s": 33.77,
+     "e": 42.79,
+     "audio": "assets/vozes/cena07_fala05_narradora1.wav"
     }
    ]
   },
   {
    "n": 8,
    "titulo": "Reducionismo mainstream",
-   "ini": 313.0,
-   "dur": 39.65,
+   "ini": 293.57,
+   "dur": 40.06,
    "falas": [
     {
      "id": "cena08_fala01_narradora2",
@@ -308,183 +308,183 @@
      "quem": "NARRADORA 1",
      "txt": "Esse é o individualismo metodológico: explicar os fenômenos sociais a partir das escolhas de indivíduos. Simplificações são úteis; todo modelo simplifica. O problema começa quando a simplificação passa a ser tratada como a própria realidade, e perguntas sobre justiça, poder e finalidade são deixadas de fora como não econômicas. É isso que chamamos de reducionismo.",
      "s": 14.24,
-     "e": 38.15,
-     "audio": null
+     "e": 38.56,
+     "audio": "assets/vozes/cena08_fala02_narradora1.wav"
     }
    ]
   },
   {
    "n": 9,
    "titulo": "A crítica marxiana",
-   "ini": 352.65,
-   "dur": 50.86,
+   "ini": 333.63,
+   "dur": 47.62,
    "falas": [
     {
      "id": "cena09_fala01_narradora2",
      "quem": "NARRADORA 2",
      "txt": "A crítica marxiana vai na raiz desse ponto de partida. Para Marx, o indivíduo isolado não é o começo da história, é um produto dela. Ele ironizava as robinsonadas dos economistas, que imaginavam a economia a partir de um Robinson Crusoé sozinho em uma ilha.",
      "s": 1.0,
-     "e": 20.57,
-     "audio": null
+     "e": 16.74,
+     "audio": "assets/vozes/cena09_fala01_narradora2.wav"
     },
     {
      "id": "cena09_fala02_narradora1",
      "quem": "NARRADORA 1",
      "txt": "As pessoas produzem e consomem dentro de relações sociais: entre trabalhadores e proprietários, entre classes, com conflitos de interesse. Ao tratar preços e mercados como fenômenos naturais, a teoria esconde que por trás das mercadorias há relações entre pessoas. Marx chamou isso de fetichismo da mercadoria.",
-     "s": 21.27,
-     "e": 41.27,
-     "audio": null
+     "s": 17.44,
+     "e": 38.17,
+     "audio": "assets/vozes/cena09_fala02_narradora1.wav"
     },
     {
      "id": "cena09_fala03_cidadao",
      "quem": "CIDADÃ",
      "txt": "Então quando o modelo diz todos poderiam estar melhor, ele está apagando quem ganha e quem perde.",
-     "s": 41.97,
-     "e": 49.36,
-     "audio": null
+     "s": 38.87,
+     "e": 46.12,
+     "audio": "assets/vozes/cena09_fala03_cidadao.wav"
     }
    ]
   },
   {
    "n": 10,
    "titulo": "Caso hipotético: R$ 1 bilhão",
-   "ini": 403.51,
-   "dur": 50.91,
+   "ini": 381.25,
+   "dur": 51.64,
    "falas": [
     {
      "id": "cena10_fala01_narradora1",
      "quem": "NARRADORA 1",
      "txt": "Vamos testar tudo isso em um caso hipotético. O governo tem um bilhão de reais para investir, e quatro opções: infraestrutura, saúde, educação ou transferência de renda.",
      "s": 1.2,
-     "e": 12.94,
-     "audio": null
+     "e": 14.43,
+     "audio": "assets/vozes/cena10_fala01_narradora1.wav"
     },
     {
      "id": "cena10_fala02_economista",
      "quem": "ECONOMISTA",
      "txt": "Rodei as simulações. Infraestrutura gera o maior crescimento no curto prazo. Transferência de renda reduz mais a pobreza agora. Saúde salva mais vidas e reduz doenças. Educação tem os maiores ganhos, mas só daqui a quinze ou vinte anos.",
-     "s": 13.64,
-     "e": 30.6,
-     "audio": null
+     "s": 15.13,
+     "e": 32.81,
+     "audio": "assets/vozes/cena10_fala02_economista.wav"
     },
     {
      "id": "cena10_fala03_cidadao",
      "quem": "CIDADÃ",
      "txt": "E qual é a melhor?",
-     "s": 31.3,
-     "e": 33.47,
-     "audio": null
+     "s": 33.51,
+     "e": 35.11,
+     "audio": "assets/vozes/cena10_fala03_cidadao.wav"
     },
     {
      "id": "cena10_fala04_economista",
      "quem": "ECONOMISTA",
      "txt": "Depende de qual gráfico você olha.",
-     "s": 34.17,
-     "e": 36.78,
-     "audio": null
+     "s": 35.81,
+     "e": 38.57,
+     "audio": "assets/vozes/cena10_fala04_economista.wav"
     },
     {
      "id": "cena10_fala05_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Os números são fictícios, mas o dilema é real. Cada gráfico mostra um resultado dentro do modelo, e nenhum deles diz, sozinho, qual escolher.",
-     "s": 37.48,
-     "e": 47.91,
-     "audio": null
+     "s": 39.27,
+     "e": 48.64,
+     "audio": "assets/vozes/cena10_fala05_narradora2.wav"
     }
    ]
   },
   {
    "n": 11,
    "titulo": "Quem escolhe os pesos?",
-   "ini": 454.42,
-   "dur": 35.3,
+   "ini": 432.89,
+   "dur": 38.82,
    "falas": [
     {
      "id": "cena11_fala01_cidadao",
      "quem": "CIDADÃ",
      "txt": "Se eu priorizo crescimento, escolho infraestrutura. Se priorizo quem está passando fome hoje, escolho transferência. Se penso nos meus netos, educação.",
      "s": 1.0,
-     "e": 10.13,
-     "audio": null
+     "e": 12.14,
+     "audio": "assets/vozes/cena11_fala01_cidadao.wav"
     },
     {
      "id": "cena11_fala02_economista",
      "quem": "ECONOMISTA",
      "txt": "E se eu juntar tudo num único índice, com pesos para cada objetivo?",
-     "s": 10.83,
-     "e": 16.48,
-     "audio": null
+     "s": 12.84,
+     "e": 18.49,
+     "audio": "assets/vozes/cena11_fala02_economista.wav"
     },
     {
      "id": "cena11_fala03_cidadao",
      "quem": "CIDADÃ",
      "txt": "Quem escolhe os pesos?",
-     "s": 17.18,
-     "e": 18.92,
-     "audio": null
+     "s": 19.19,
+     "e": 21.54,
+     "audio": "assets/vozes/cena11_fala03_cidadao.wav"
     },
     {
      "id": "cena11_fala04_economista",
      "quem": "ECONOMISTA",
      "txt": "Eu escolho. Ou alguém escolhe. Tá, entendi: os pesos são valores.",
-     "s": 19.62,
-     "e": 24.4,
-     "audio": null
+     "s": 22.24,
+     "e": 28.2,
+     "audio": "assets/vozes/cena11_fala04_economista.wav"
     },
     {
      "id": "cena11_fala05_narradora1",
      "quem": "NARRADORA 1",
      "txt": "A pergunta qual é a escolha economicamente correta já contém uma escolha ética: correta segundo qual objetivo, e para quem?",
-     "s": 25.1,
-     "e": 33.8,
-     "audio": null
+     "s": 28.9,
+     "e": 37.32,
+     "audio": "assets/vozes/cena11_fala05_narradora1.wav"
     }
    ]
   },
   {
    "n": 12,
    "titulo": "Fechamento",
-   "ini": 489.72,
-   "dur": 40.68,
+   "ini": 471.71,
+   "dur": 39.27,
    "falas": [
     {
      "id": "cena12_fala01_narradora2",
      "quem": "NARRADORA 2",
      "txt": "Nada disso significa abandonar a economia. Sem ela, não saberíamos quanto custa cada opção, nem quais consequências são prováveis. Os modelos e indicadores são indispensáveis para enxergar a realidade.",
      "s": 1.0,
-     "e": 13.61,
-     "audio": null
+     "e": 12.66,
+     "audio": "assets/vozes/cena12_fala01_narradora2.wav"
     },
     {
      "id": "cena12_fala02_narradora1",
      "quem": "NARRADORA 1",
      "txt": "O problema não é usar a economia para decidir. É esquecer que as decisões afetam pessoas, e tratá-las como se fossem resultados técnicos, neutros, sem autor.",
-     "s": 14.31,
-     "e": 25.61,
-     "audio": null
+     "s": 13.36,
+     "e": 24.61,
+     "audio": "assets/vozes/cena12_fala02_narradora1.wav"
     },
     {
      "id": "cena12_fala03_economista",
      "quem": "ECONOMISTA",
      "txt": "Talvez meu trabalho não seja só mostrar os meios. Também é deixar claro quais fins estou assumindo.",
-     "s": 26.31,
-     "e": 33.7,
-     "audio": null
+     "s": 25.31,
+     "e": 32.58,
+     "audio": "assets/vozes/cena12_fala03_economista.wav"
     },
     {
      "id": "cena12_fala04_cidadao",
      "quem": "CIDADÃ",
      "txt": "E abrir espaço para que as pessoas afetadas participem dessa escolha.",
-     "s": 34.4,
-     "e": 39.18,
-     "audio": null
+     "s": 33.28,
+     "e": 37.77,
+     "audio": "assets/vozes/cena12_fala04_cidadao.wav"
     }
    ]
   },
   {
    "n": 13,
    "titulo": "Pergunta final e créditos",
-   "ini": 530.4,
+   "ini": 510.98,
    "dur": 38.42,
    "falas": [
     {
